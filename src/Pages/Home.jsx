@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar"; 
 import faridabad from "../assets/faridabad.webp";
 import noida from "../assets/noida.jpg";
-import southDelhi1 from "../assets/southDelhi1.jpg";
+import southDelhi1 from "../assets/southdelhi1.jpg";
 import gurgao from "../assets/gurgao.png";
 
 const cityData = [
