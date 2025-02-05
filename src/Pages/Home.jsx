@@ -1,11 +1,14 @@
 import React from "react";
 import { ClipboardList, Handshake, Map, Users, ChevronLeft, ChevronRight } from "lucide-react";
+import Footer from "../Components/Footer";
 import { useState, useEffect } from "react";
+import { SocialIcon } from "react-social-icons";
 import Navbar from "../Components/Navbar"; 
 import faridabad from "../assets/faridabad.webp";
 import noida from "../assets/noida.jpg";
 import southDelhi1 from "../assets/southdelhi1.jpg";
 import gurgao from "../assets/gurgao.png";
+
 
 const cityData = [
   {
@@ -54,10 +57,10 @@ const steps = [
 ];
 
 const images = [
-  { src: "https://via.placeholder.com/400", title: "Destination Weddings" },
-  { src: "https://via.placeholder.com/400", title: "Photography" },
-  { src: "https://via.placeholder.com/400", title: "Decor" },
-  { src: "https://via.placeholder.com/400", title: "Bridal Jewellery" },
+  { src: noida, title: "Destination Weddings" },
+  { src: noida, title: "Photography" },
+  { src: noida, title: "Decor" },
+  { src: noida, title: "Bridal Jewellery" },
 ];
 
 
@@ -85,6 +88,41 @@ const App = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+  
+  const socialMedia = [
+    {
+      platform: "Instagram",
+      username: "@banquethalls.co",
+      image: "/assets/instagram-post.jpg",
+      profileUrl: "https://www.instagram.com/Weddingz.in",
+      actionText: "Follow",
+      bgColor: "bg-gradient-to-r from-pink-500 to-purple-500",
+    },
+    {
+      platform: "Facebook",
+      username: "@banquethalls.co",
+      image: "/assets/facebook-post.jpg",
+      profileUrl: "https://www.facebook.com/Weddingz.in",
+      actionText: "Like Page",
+      bgColor: "bg-gradient-to-r from-blue-500 to-blue-700",
+    },
+    {
+      platform: "Pinterest",
+      username: "@banquethalls.co",
+      image: "/assets/pinterest-post.jpg",
+      profileUrl: "https://www.pinterest.com/WeddingzIndia",
+      actionText: "Pin It",
+      bgColor: "bg-gradient-to-r from-red-500 to-red-700",
+    },
+    {
+      platform: "Snapchat",
+      username: "@banquethalls.co",
+      image: "/assets/snapchat-code.jpg",
+      profileUrl: "https://www.snapchat.com/add/Weddingz",
+      actionText: "Scan & Add",
+      bgColor: "bg-gradient-to-r from-yellow-400 to-yellow-500",
+    },
+  ];
 
   return (
     <div>
@@ -163,46 +201,140 @@ const App = () => {
           ))}
         </div>
       </section>
-      <div className="relative w-full max-w-5xl mx-auto pb-10">
-        <h2 className="text-3xl text-center font-bold text-gray-800 mt-10 mb-10 ">Wedding Photos</h2>
-        <div className="relative flex items-center overflow-hidden">
-          {/* Left Arrow */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 z-10 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
-          >
-            <ChevronLeft size={30} />
-          </button>
+      <div className="relative w-full max-w-5xl mx-auto overflow-hidden py-10">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {images.map((img, index) => (
+            <div key={index} className="w-full flex-none relative">
+              <img
+                src={img.src}
+                alt={img.title}
+                className="w-full h-[250px] object-cover rounded-lg my-10"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <span className="text-white text-lg font-semibold">{img.title}</span>
+              </div>
+            </div>
+          ))}
+        </div>
 
-          {/* Image Slider */}
-          <div className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-            {images.map((img, index) => (
-              <div key={index} className="w-full flex-none relative">
-                <img
-                  src={img.src}
-                  alt={img.title}
-                  className="w-full h-[250px] object-cover rounded-lg my-10"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                  <span className="text-white text-lg font-semibold">
-                    {img.title}
-                  </span>
+        {/* Left Arrow */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
+        >
+          {"<"}
+        </button>
+
+        {/* Right Arrow */}
+        <button
+          onClick={nextSlide}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
+        >
+          {">"}
+        </button>
+      </div>
+      <div className="max-w-6xl mx-auto mt-16 px-4">
+        <h2 className="text-center text-4xl font-extrabold text-gray-800 mb-8">
+          Connect with Us
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+          {socialMedia.map((social, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-xl overflow-hidden transition transform hover:scale-105 hover:shadow-2xl"
+            >
+              {/* Social Media Header */}
+              <div className="flex items-center space-x-4 p-4 bg-opacity-10">
+                {/* Social Media Icon using react-social-icons */}
+                <SocialIcon url={social.profileUrl} style={{ width: 50, height: 50 }} />
+
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">{social.username}</h3>
+                  <p className="text-sm text-gray-500">On {social.platform}</p>
                 </div>
               </div>
-            ))}
-          </div>
 
-          {/* Right Arrow */}
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 z-10 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
-          >
-            <ChevronRight size={30} />
-          </button>
+              {/* Image Content */}
+              <img
+                src={social.image}
+                alt={social.platform}
+                className="w-full h-48 object-cover"
+              />
+
+              {/* Follow Button */}
+              <div className="p-4">
+                <a href={social.profileUrl} target="_blank" rel="noopener noreferrer">
+                  <button
+                    className={`w-full text-white font-bold py-3 rounded-full flex items-center justify-center space-x-2 ${social.bgColor} transition hover:opacity-90`}
+                  >
+                    <span>{social.actionText}</span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+      <div className="bg-black text-white py-16">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          {/* Left Section - Call Us */}
+          <div className="text-center md:text-left space-y-4">
+            <div className="flex items-center justify-center md:justify-start space-x-3">
+              <span className="text-5xl">📞</span>
+              <h2 className="text-3xl font-bold text-white">
+                CALL US: <span className="text-red-500">76-66-77-88-99</span>
+              </h2>
+            </div>
+            <p className="text-gray-400 text-sm">24-hour helpline</p>
+
+            {/* OR Divider */}
+            <div className="my-6 flex justify-center md:justify-start">
+              <span className="border border-white px-6 py-2 rounded-full text-lg text-white">
+                OR
+              </span>
+            </div>
+
+            {/* Call Back Option */}
+            <h3 className="text-2xl font-bold">
+              <span className="text-red-500">HAVE US CALL YOU</span> FOR UP TO{" "}
+              <span className="text-white">30% DISCOUNT</span>
+            </h3>
+
+            {/* Call to Action Button */}
+            <button className="mt-4 px-8 py-3 bg-red-500 text-white rounded-full text-lg transition-transform transform hover:scale-105">
+              Request Call Back
+            </button>
+          </div>
+
+          {/* Right Section - Key Points */}
+          <div className="text-left space-y-4 md:mt-0">
+            <ul className="space-y-3">
+              <li className="flex items-start space-x-3">
+                <span className="text-red-500 text-2xl">✔</span>
+                <p className="text-lg">India's Largest Wedding Company.</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-red-500 text-2xl">✔</span>
+                <p className="text-lg">Find, Compare, and Book Wedding Venues and Services.</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-red-500 text-2xl">✔</span>
+                <p className="text-lg">Best Prices Guaranteed.</p>
+              </li>
+              <li className="flex items-start space-x-3">
+                <span className="text-red-500 text-2xl">✔</span>
+                <p className="text-lg">Find Inspiration, Ideas, and Insights for Your Wedding.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <Footer />
+      </div>
   );
 };
 
