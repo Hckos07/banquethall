@@ -36,9 +36,9 @@ const Footer = () => {
 
           {/* Right Section */}
           <div className="text-right">
-            <h3 className="font-semibold text-white mb-3">Weddingz.in</h3>
+            <h3 className="font-semibold text-white mb-3">BanquetHalls.co</h3>
             <p className="text-gray-400">Call our 24-hour helpline</p>
-            <p className="text-lg font-bold text-white mt-2">76-66-77-88-99</p>
+            <p className="text-lg font-bold text-white mt-2">764567377</p>
             <p className="mt-2">
               <a href="mailto:info.weddingz@oyorooms.com" className="text-blue-400 hover:underline">
                 info.weddingz@oyorooms.com
@@ -67,7 +67,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-xs mt-6">
-          © WeddingZ 2019. All rights reserved.
+          © Banquet Halls. All rights reserved.
         </div>
       </div>
     </footer>
