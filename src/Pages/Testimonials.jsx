@@ -1,17 +1,81 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion } from "framer-motion";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import bridalwear from "../assets/bridalwear01.jpeg";
-import decor from "../assets/decor01.jpeg";
-import ideas from "../assets/ideas.jpeg";
-import jewellery from "../assets/jewellery01.jpeg";
-import makeup from "../assets/makeup02.jpeg";
-import mehendi from "../assets/mehendi03.jpeg";
-import destinationwedding from "../assets/destinationwedding.webp"
+import weddingtestimonial from "../assets/weddingtestimonial.jpg";
 import Footer from "../Components/Footer";
 
+// Testimonial Component
+const TestimonialCard = ({ testimonial }) => {
+  return (
+    <div className="border rounded-lg shadow-md max-w-md p-5">
+      {/* Top Header with Quote Icon & Title */}
+      <div className="bg-gray-100 px-4 py-2 flex items-center font-semibold text-gray-800">
+        <FaQuoteLeft className="mr-2 text-xl text-gray-500" />
+        {testimonial.title}
+      </div>
+
+      {/* Rating, Date, and Review */}
+      <div className="p-4">
+        <div className="flex items-center justify-between">
+          {/* Star Rating */}
+          <div className="text-yellow-500 text-lg">★★★★★</div>
+          <span className="text-gray-400 text-sm">{testimonial.date}</span>
+        </div>
+
+        {/* Review Text */}
+        <p className="mt-2 text-gray-700">{testimonial.review}</p>
+
+        {/* Divider */}
+        <hr className="my-3" />
+
+        {/* User Details */}
+        <p className="font-bold">By: {testimonial.name}</p>
+        <p className="text-sm text-gray-600">Booked: {testimonial.booked}</p>
+        <p className="text-sm text-gray-600">Event: {testimonial.event}</p>
+        <p className="text-sm text-gray-600">Booking Date: {testimonial.bookingDate}</p>
+      </div>
+
+      {/* Bottom Quote Icon */}
+      <div className="text-right text-gray-500 p-2">
+        <FaQuoteRight />
+      </div>
+    </div>
+  );
+};
+
+const TestimonialsSection = () => {
+  // Sample Testimonial Data
+  const testimonials = [
+    {
+      title: "Good",
+      review: "Excellent",
+      name: "Dr Rishika",
+      booked: "Doab Vilas",
+      event: "Wedding",
+      bookingDate: "Feb. 10, 2020",
+      date: "July 12, 2020",
+    },
+    {
+      title: "Mind Blowing Services",
+      review: "It was an awesome experience at Clarion Inn Sevilla. Our guests appreciated the food, service decoration, and hospitality.",
+      name: "Oshin",
+      booked: "Clarion Inn Sevilla",
+      event: "Wedding",
+      bookingDate: "Dec. 18, 2019",
+      date: "July 2, 2020",
+    },
+  ];
+
+  return (
+    <div className="flex flex-wrap justify-center gap-6 p-6">
+      {testimonials.map((testimonial, index) => (
+        <TestimonialCard key={index} testimonial={testimonial} />
+      ))}
+    </div>
+  );
+};
 
 const Photo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,16 +92,6 @@ const Photo = () => {
     { name: "Photos", path: "/Photos" },
     { name: "Testimonials", path: "/Testimonials" },
     { name: "Why Us", path: "/WhyUs" },
-  ];
-
-  // Favorite categories
-  const favourites = [
-    { title: "BRIDAL WEAR", image: bridalwear },
-    { title: "DECOR", image: decor },
-    { title: "JEWELLERY", image: jewellery },
-    { title: "MAKEUP", image: makeup },
-    { title: "MEHENDI", image: mehendi },
-    { title: "DESTINATION WEDDING", image: destinationwedding },
   ];
 
   return (
@@ -105,8 +159,8 @@ const Photo = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src={ideas}
-            alt="Wedding Background"
+            src={weddingtestimonial}
+            alt="background"
             className="w-full h-full object-cover brightness-50"
           />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -114,53 +168,15 @@ const Photo = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold">PHOTOS</h1>
-          <p className="mt-4 text-lg md:text-xl">
-            Get Inspired from Real Weddings with us.
+          <h1 className="text-4xl md:text-5xl ">Meet Our Customers</h1>
+          <p className="mt-4 text-lg md:text-2xl">
+            Meet our wonderful customers and learn the magical journey they went through, with us.
           </p>
         </div>
       </div>
 
-      {/* Favourites Section */}
-      <div className="container mx-auto py-10 px-6">
-        {/* Title Section */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-semibold text-gray-800">Our Favourites</h2>
-          <p className="text-gray-500 italic">
-            Top <span className="text-red-500 font-semibold">picks</span> for wedding ideas
-          </p>
-        </div>
-
-        {/* Image Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {favourites.map((item, index) => (
-            <motion.div
-              key={index}
-              className="relative group overflow-hidden rounded-lg shadow-lg"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-64 object-cover brightness-75 transition-all duration-300 group-hover:brightness-100"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center">
-                <motion.h3
-                  className="text-white text-xl font-semibold"
-                  initial={{ y: 20, opacity: 0 }}
-                  whileHover={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  {item.title}
-                </motion.h3>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Footer */}
       <Footer />

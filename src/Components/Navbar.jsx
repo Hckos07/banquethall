@@ -2,17 +2,23 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.png";
-import weddingh1 from "../assets/weddingh1.jpg";
+import wedding from "../assets/wedding1.jpg";
 
-const Nav = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
-  const toggleNavbar = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Venues", path: "/venues" },
+    { name: "Photos", path: "/Photos" },
+    { name: "Testimonials", path: "/Testimonials" },
+    { name: "Why Us", path: "/WhyUs" },
+  ];
 
   return (
     <>
@@ -21,70 +27,53 @@ const Nav = () => {
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <NavLink to="/">
-            <img src={logo} alt="company logo" className="w-auto h-12" />
+            <img src={logo} alt="Company Logo" className="w-auto h-12" />
           </NavLink>
 
           {/* Desktop Links */}
-          <div className="text-xl hidden md:flex space-x-6">
-            <NavLink to="/" className="text-gray-600 hover:text-blue-600 transition-all">
-              Home
-            </NavLink>
-            <NavLink to="/venues" className="text-gray-600 hover:text-blue-600 transition-all">
-              Venues
-            </NavLink>
-            <NavLink to="/RealWeddings" className="text-gray-600 hover:text-blue-600 transition-all">
-              RealWeddings
-            </NavLink>
-            <NavLink to="/Photos" className="text-gray-600 hover:text-blue-600 transition-all">
-              Photos
-            </NavLink>
-            <NavLink to="/Testimonials" className="text-gray-600 hover:text-blue-600 transition-all">
-              Testimonials
-            </NavLink>
-            <NavLink to="/Why Us" className="text-gray-600 hover:text-blue-600 transition-all">
-              Why Us
-            </NavLink>
+          <div className="hidden md:flex space-x-6 text-lg">
+            {navLinks.map(({ name, path }, index) => (
+              <NavLink
+                key={index}
+                to={path}
+                className={({ isActive }) =>
+                  `text-gray-600 hover:text-blue-600 transition-all ${isActive ? "font-bold text-blue-600" : ""}`
+                }
+              >
+                {name}
+              </NavLink>
+            ))}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button onClick={toggleNavbar} className="text-gray-700">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-700 transition-all hover:bg-blue-200 p-2 rounded-md"
+              aria-expanded={isOpen}
+            >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div
-          className={`md:hidden fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-        >
-          <div className="flex justify-end p-4">
-            <button onClick={toggleNavbar} className="text-gray-700">
-              <X size={28} />
-            </button>
+        {isOpen && (
+          <div className="md:hidden absolute top-16 left-0 w-full bg-blue-50 shadow-md py-4">
+            <div className="flex flex-col items-center space-y-4">
+              {navLinks.map(({ name, path }, index) => (
+                <NavLink
+                  key={index}
+                  to={path}
+                  className="text-gray-600 hover:text-blue-600 transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {name}
+                </NavLink>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-col space-y-4 p-6">
-            <NavLink to="/" className="text-gray-700 text-lg hover:text-blue-600 transition-all" onClick={() => setIsOpen(false)}>
-              Home
-            </NavLink>
-            <NavLink to="/venues" className="text-gray-600 hover:text-blue-600 transition-all">
-              Venues
-            </NavLink>
-            <NavLink to="/RealWeddings" className="text-gray-600 hover:text-blue-600 transition-all">
-              RealWeddings
-            </NavLink>
-            <NavLink to="/Photos" className="text-gray-600 hover:text-blue-600 transition-all">
-              Photos
-            </NavLink>
-            <NavLink to="/Testimonials" className="text-gray-600 hover:text-blue-600 transition-all">
-              Testimonials
-            </NavLink>
-            <NavLink to="/Why Us" className="text-gray-600 hover:text-blue-600 transition-all">
-              Why Us
-            </NavLink>
-          </div>
-        </div>
+        )}
       </nav>
 
       {/* Spacer to prevent content from being hidden behind fixed navbar */}
@@ -95,11 +84,11 @@ const Nav = () => {
         {/* Overlay Image */}
         <div className="absolute inset-0">
           <img
-            src={weddingh1}
+            src={wedding}
             alt="Wedding Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-30"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
 
         {/* Content */}
@@ -117,4 +106,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;

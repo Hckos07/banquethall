@@ -127,6 +127,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      
       <section className="text-center my-12 px-6">
         {/* Title & Description */}
         <h2 className="text-2xl font-semibold text-gray-800">
