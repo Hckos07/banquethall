@@ -9,7 +9,9 @@ import ideas from "../assets/ideas.jpeg";
 import jewellery from "../assets/jewellery01.jpeg";
 import makeup from "../assets/makeup02.jpeg";
 import mehendi from "../assets/mehendi03.jpeg";
+import destinationwedding from "../assets/destinationwedding.webp"
 import Footer from "../Components/Footer";
+
 
 const Photo = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,11 +33,12 @@ const Photo = () => {
 
   // Favorite categories
   const favourites = [
-    { title: "BRIDALWEAR", image: bridalwear },
-    { title: "DÉCOR", image: decor },
+    { title: "BRIDAL WEAR", image: bridalwear },
+    { title: "DECOR", image: decor },
     { title: "JEWELLERY", image: jewellery },
     { title: "MAKEUP", image: makeup },
     { title: "MEHENDI", image: mehendi },
+    { title: "DESTINATION WEDDING", image: destinationwedding },
   ];
 
   return (
