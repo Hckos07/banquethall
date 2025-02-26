@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Noida from './Pages/Noida'
 import Photos from './Pages/Photos'
 import Testimonials from './Pages/Testimonials'
+import Whyus from './Pages/whyus'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/noida" element={<Noida />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/Testimonials" element={<Testimonials />} />
+          <Route path="/whyus" element={<Whyus />} />
         </Routes>
       </BrowserRouter>
     </>
