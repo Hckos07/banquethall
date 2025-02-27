@@ -93,7 +93,7 @@ const Navbar = () => {
 
         {/* Content */}
         <div className="relative z-10">
-          <h1 className="text-4xl font-bold">Plan Your Wedding With Us.</h1>
+          <h1 className="text-4xl font-bold"></h1>
           <select className="mt-7 px-4 py-2 text-black rounded bg-gray-200">
             <option>Select City</option>
             <option>Faridabad</option>

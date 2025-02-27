@@ -42,13 +42,13 @@ const Whyus = () => {
   const featuredArticles = [
     {
       logo: pocketnewsalert,
-      title: "Banquethalls.in - the first online wedding company to complete 1000 Weddings",
+      title: "Banquethalls.co - the first online wedding company to complete 1000 Weddings",
       source: "Pocketnewsalert.com",
       date: "14 June 2023",
     },
     {
       logo: bwdisrupt,
-      title: "Banquethalls.in - An Online Marketplace for Wedding Services",
+      title: "Banquethalls.co - An Online Marketplace for Wedding Services",
       source: "Business World",
       date: "21 April 2023",
     },
@@ -60,31 +60,31 @@ const Whyus = () => {
     },
     {
       logo: yourstory,
-      title: "Within two months of raising $1M, Banquethalls.in raises another round of funding",
+      title: "Within two months of raising $1L, Banquethalls.co raises another round of funding",
       source: "YourStory",
       date: "9 February 2023",
     },
     {
       logo: vccircle,
-      title: "Exclusive: Banquethalls.in gets pre-Series A funding from Sixth Sense Ventures",
+      title: "Exclusive: Banquethalls.co gets pre-Series A funding from Sixth Sense Ventures",
       source: "VCCircle",
       date: "9 February 2023",
     },
     {
       logo: etlogo,
-      title: "Weddingz.in raises undisclosed funding from Sixth Sense Ventures",
+      title: "Banquethalls.co raises undisclosed funding from Sixth Sense Ventures",
       source: "etlogo",
       date: "9 February 2023",
     },
     {
       logo: iamwire,
-      title: "Weddingz.in Raises Pre Series A Round of Funding",
+      title: "Banquethalls.co Raises Pre Series A Round of Funding",
       source: "iamwire",
       date: "9 February 2023",
     },
     {
       logo: dealcurry,
-      title: "Within two months of raising $1M, Banquethalls.in raises another round of funding",
+      title: "Within two months of raising $1L, Banquethalls.co raises another round of funding",
       source: "YourStory",
       date: "9 February 2023",
     },

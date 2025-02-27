@@ -4,7 +4,7 @@ import Home from './Pages/Home'
 import Noida from './Pages/Noida'
 import Photos from './Pages/Photos'
 import Testimonials from './Pages/Testimonials'
-import Whyus from './Pages/whyus'
+import Whyus from './Pages/Whyus'
 
 const App = () => {
   return (
