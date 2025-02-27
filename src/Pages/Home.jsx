@@ -185,7 +185,7 @@ const App = () => {
         </div>
       </section>
       {/* image carosal needs to be put here */}
-      <ImageCarousel />
+      <ImageCarousel/>
       
       <div className="max-w-6xl mx-auto mt-16 px-4">
         <h2 className="text-center text-4xl font-extrabold text-gray-800 mb-8">

@@ -21,7 +21,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Get Inspired</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition">Photos</a>
+                <a href="/photos" className="text-gray-400 hover:text-white transition">Photos</a>
               </li>
             </ul>
 
@@ -47,18 +47,26 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Middle Section */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2">
-              {["Home", "Why Us", "Venues", "Testimonials", "Contact Us"].map((item, index) => (
+              {[
+                { name: "Home", link: "/" },
+                { name: "Why Us", link: "/whyus" },
+                { name: "Venues", link: "/venues" },
+                { name: "Testimonials", link: "/testimonials" },
+              ].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition">{item}</a>
+                  <a
+                    href={item.link}
+                    className="text-gray-400 hover:text-white transition"
+                  >
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
-
           {/* Right Section */}
           <div className="md:text-right text-center">
             <h3 className="text-lg font-semibold text-white mb-4">BanquetHalls.co</h3>

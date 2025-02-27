@@ -4,7 +4,8 @@ import Home from './Pages/Home'
 import Noida from './Pages/Noida'
 import Photos from './Pages/Photos'
 import Testimonials from './Pages/Testimonials'
-import Whyus from './Pages/Whyus'
+import Whyus from './Pages/whyus'
+import Images from './Pages/Images'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/photos" element={<Photos />} />
           <Route path="/Testimonials" element={<Testimonials />} />
           <Route path="/whyus" element={<Whyus />} />
+          <Route path="/images" element={<Images />} />
         </Routes>
       </BrowserRouter>
     </>
