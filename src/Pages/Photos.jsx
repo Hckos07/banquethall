@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 import bridalwear from "../assets/bridalwear01.jpeg";
 import decor from "../assets/decor01.jpeg";
-import ideas from "../assets/ideas.jpeg";
+import Ideas from "../assets/ideas.jpeg";
 import jewellery from "../assets/jewellery01.jpeg";
 import makeup from "../assets/makeup02.jpeg";
 import mehendi from "../assets/mehendi03.jpeg";
@@ -105,7 +105,7 @@ const Photo = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src={ideas}
+            src={Ideas}
             alt="Wedding Background"
             className="w-full h-full object-cover brightness-50"
           />
