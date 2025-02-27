@@ -1,6 +1,8 @@
 import React from "react";
 import { ClipboardList, Handshake, Map, Users, ChevronLeft, ChevronRight } from "lucide-react";
+import { FaPhoneAlt, FaCheckCircle } from "react-icons/fa";
 import Footer from "../Components/Footer";
+import ImageCarousel from "../Components/ImageCorosal";
 import { useState, useEffect } from "react";
 import { SocialIcon } from "react-social-icons";
 import Navbar from "../Components/Navbar"; 
@@ -8,6 +10,10 @@ import faridabad from "../assets/faridabad.webp";
 import noida from "../assets/noida.jpg";
 import southDelhi1 from "../assets/southdelhi1.jpg";
 import gurgao from "../assets/gurgao.png";
+import decor from "../assets/decor01.jpeg";
+import destinationwedding from "../assets/destinationwedding.webp"
+import weddecor from "../assets/weddecor.png";
+import makeup from "../assets/makeup02.jpeg";
 
 
 const cityData = [
@@ -63,37 +69,13 @@ const images = [
   { src: noida, title: "Bridal Jewellery" },
 ];
 
-
 const App = () => {
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Auto-slide effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 3000); // Change slide every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-  
   const socialMedia = [
     {
       platform: "Instagram",
       username: "@banquethalls.co",
-      image: "/assets/instagram-post.jpg",
+      image: decor,
       profileUrl: "https://www.instagram.com/Weddingz.in",
       actionText: "Follow",
       bgColor: "bg-gradient-to-r from-pink-500 to-purple-500",
@@ -101,7 +83,7 @@ const App = () => {
     {
       platform: "Facebook",
       username: "@banquethalls.co",
-      image: "/assets/facebook-post.jpg",
+      image: destinationwedding,
       profileUrl: "https://www.facebook.com/Weddingz.in",
       actionText: "Like Page",
       bgColor: "bg-gradient-to-r from-blue-500 to-blue-700",
@@ -109,7 +91,7 @@ const App = () => {
     {
       platform: "Pinterest",
       username: "@banquethalls.co",
-      image: "/assets/pinterest-post.jpg",
+      image: weddecor,
       profileUrl: "https://www.pinterest.com/WeddingzIndia",
       actionText: "Pin It",
       bgColor: "bg-gradient-to-r from-red-500 to-red-700",
@@ -117,7 +99,7 @@ const App = () => {
     {
       platform: "Snapchat",
       username: "@banquethalls.co",
-      image: "/assets/snapchat-code.jpg",
+      image: makeup,
       profileUrl: "https://www.snapchat.com/add/Weddingz",
       actionText: "Scan & Add",
       bgColor: "bg-gradient-to-r from-yellow-400 to-yellow-500",
@@ -134,7 +116,7 @@ const App = () => {
           Hassle Free Planning & Booking at Our Guaranteed Best Prices.
         </h2>
         <p className="text-gray-600 mt-2">
-          800+ Events Organized till Date ● Present in 4+ Cities ● Over 500+ Wedding Venues & Vendors
+          2000+ Events Organized till Date ● Present in 4 Cities ● Over 50+ Wedding Venues & Vendors
         </p>
 
         {/* Subheading */}
@@ -202,41 +184,9 @@ const App = () => {
           ))}
         </div>
       </section>
-      <div className="relative w-full max-w-5xl mx-auto overflow-hidden py-10">
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {images.map((img, index) => (
-            <div key={index} className="w-full flex-none relative">
-              <img
-                src={img.src}
-                alt={img.title}
-                className="w-full h-[250px] object-cover rounded-lg my-10"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-                <span className="text-white text-lg font-semibold">{img.title}</span>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Left Arrow */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
-        >
-          {"<"}
-        </button>
-
-        {/* Right Arrow */}
-        <button
-          onClick={nextSlide}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-white rounded-full shadow-md text-gray-600 hover:bg-gray-200"
-        >
-          {">"}
-        </button>
-      </div>
+      {/* image carosal needs to be put here */}
+      <ImageCarousel />
+      
       <div className="max-w-6xl mx-auto mt-16 px-4">
         <h2 className="text-center text-4xl font-extrabold text-gray-800 mb-8">
           Connect with Us
@@ -281,55 +231,51 @@ const App = () => {
         </div>
       </div>
       <div className="bg-black text-white py-16">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+        <div className="max-w-6xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0">
+
           {/* Left Section - Call Us */}
-          <div className="text-center md:text-left space-y-4">
-            <div className="flex items-center justify-center md:justify-start space-x-3">
-              <span className="text-5xl">📞</span>
-              <h2 className="text-3xl font-bold text-white">
-                CALL US: <span className="text-red-500">76-66-77-88-99</span>
+          <div className="text-center md:text-left space-y-6">
+            <div className="flex items-center justify-center md:justify-start space-x-4">
+              <FaPhoneAlt className="text-red-500 text-4xl" />
+              <h2 className="text-3xl font-bold">
+                CALL US: <span className="text-red-500">+91 9266 948 375</span>
               </h2>
             </div>
-            <p className="text-gray-400 text-sm">24-hour helpline</p>
+            <p className="text-gray-400 text-sm">Available 24/7 - Call now for assistance</p>
 
             {/* OR Divider */}
-            <div className="my-6 flex justify-center md:justify-start">
+            <div className="flex items-center justify-center md:justify-start my-6">
               <span className="border border-white px-6 py-2 rounded-full text-lg text-white">
                 OR
               </span>
             </div>
 
-            {/* Call Back Option */}
+            {/* Call Back Offer */}
             <h3 className="text-2xl font-bold">
-              <span className="text-red-500">HAVE US CALL YOU</span> FOR UP TO{" "}
-              <span className="text-white">30% DISCOUNT</span>
+              <span className="text-red-500">HAVE US CALL YOU</span> & GET UP TO{" "}
+              <span className="text-white">30% OFF</span>
             </h3>
 
             {/* Call to Action Button */}
-            <button className="mt-4 px-8 py-3 bg-red-500 text-white rounded-full text-lg transition-transform transform hover:scale-105">
-              Request Call Back
+            <button className="mt-4 px-8 py-3 bg-red-500 text-white rounded-full text-lg font-semibold transition-transform transform hover:scale-110 shadow-lg">
+              Request a Call Back
             </button>
           </div>
 
           {/* Right Section - Key Points */}
-          <div className="text-left space-y-4 md:mt-0">
-            <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <span className="text-red-500 text-2xl">✔</span>
-                <p className="text-lg">India's Largest Wedding Company.</p>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-red-500 text-2xl">✔</span>
-                <p className="text-lg">Find, Compare, and Book Wedding Venues and Services.</p>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-red-500 text-2xl">✔</span>
-                <p className="text-lg">Best Prices Guaranteed.</p>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-red-500 text-2xl">✔</span>
-                <p className="text-lg">Find Inspiration, Ideas, and Insights for Your Wedding.</p>
-              </li>
+          <div className="text-left">
+            <ul className="space-y-5">
+              {[
+                "India's Largest Wedding Company",
+                "Find, Compare, and Book Wedding Venues & Services",
+                "Best Prices Guaranteed",
+                "Find Inspiration, Ideas, and Insights for Your Wedding",
+              ].map((point, index) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <FaCheckCircle className="text-red-500 text-2xl mt-1" />
+                  <p className="text-lg">{point}</p>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
