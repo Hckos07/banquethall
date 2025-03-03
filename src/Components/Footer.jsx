@@ -89,7 +89,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-5 mt-8">
           {[FaFacebookF, FaTwitter, FaPinterest, FaInstagram, FaYoutube].map((Icon, index) => (
-            <a key={index} href="#" className="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <a key={index} href="#" className="text-gray-400 hover:text-red-600 transition transform hover:scale-110">
               <Icon size={24} />
             </a>
           ))}
