@@ -1,7 +1,6 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaTwitter,
   FaPinterest,
   FaInstagram,
   FaYoutube,
@@ -88,8 +87,19 @@ const Footer = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-center space-x-5 mt-8">
-          {[FaFacebookF, FaTwitter, FaPinterest, FaInstagram, FaYoutube].map((Icon, index) => (
-            <a key={index} href="#" className="text-gray-400 hover:text-red-600 transition transform hover:scale-110">
+          {[
+            { Icon: FaFacebookF, link: "https://www.facebook.com/profile.php?id=61573440526154" },
+            { Icon: FaPinterest, link: "https://www.pinterest.com/banquethallco/?actingBusinessId=1104859858492208666" },
+            { Icon: FaInstagram, link: "https://www.instagram.com/banquethall.co/?hl=en" },
+            { Icon: FaYoutube, link: "https://www.youtube.com/yourchannel" },
+          ].map(({ Icon, link }, index) => (
+            <a
+              key={index}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-red-600 transition transform hover:scale-110"
+            >
               <Icon size={24} />
             </a>
           ))}

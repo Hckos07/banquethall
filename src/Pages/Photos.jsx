@@ -34,9 +34,9 @@ const Photo = () => {
   const favourites = [
     { title: "BRIDAL WEAR", image: bridalwear },
     { title: "DECOR", image: decor },
-    { title: "JEWELLERY", image: jewellery },
-    { title: "MAKEUP", image: makeup },
-    { title: "MEHENDI", image: mehendi },
+    { title: "BRIDAL JEWELLERY", image: jewellery },
+    { title: "BRIDAL MAKEUP", image: makeup },
+    { title: "BRIDAL MEHENDI", image: mehendi },
     { title: "DESTINATION WEDDING", image: destinationwedding },
   ];
 
@@ -107,7 +107,7 @@ const Photo = () => {
           <img
             src={Ideas}
             alt="Wedding Background"
-            className="w-full h-full object-cover brightness-50"
+            className="w-full h-full object-cover brightness-110"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -142,21 +142,32 @@ const Photo = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
+              {/* Image */}
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-64 object-cover brightness-75 transition-all duration-300 group-hover:brightness-100"
+                className="w-full h-64 object-cover transition-all duration-300"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-center justify-center">
+
+              {/* Hover Effect: Show real image in the background */}
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center bg-opacity-80 transition-all duration-300"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                style={{
+                  backgroundImage: `url(${item.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
                 <motion.h3
-                  className="text-white text-xl font-semibold"
-                  initial={{ y: 20, opacity: 0 }}
-                  whileHover={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.3 }}
+                  className="text-white text-xl font-semibold bg-black/50 px-4 py-2 rounded-md opacity-0 group-hover:opacity-100 transition-all duration-300"
+                  initial={{ y: 10 }}
+                  whileHover={{ y: 0 }}
                 >
                   {item.title}
                 </motion.h3>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
