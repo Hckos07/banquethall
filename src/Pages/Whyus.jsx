@@ -38,55 +38,54 @@ const Whyus = () => {
     { name: "Testimonials", path: "/Testimonials" },
     { name: "Why Us", path: "/WhyUs" },
   ];
-
   const featuredArticles = [
     {
       logo: pocketnewsalert,
       title: "Banquethalls.co - the first online wedding company to complete 1000 Weddings",
       source: "Pocketnewsalert.com",
-      date: "14 June 2023",
+      date: "5 January 2024",
     },
     {
       logo: bwdisrupt,
       title: "Banquethalls.co - An Online Marketplace for Wedding Services",
       source: "Business World",
-      date: "21 April 2023",
+      date: "14 March 2024",
     },
     {
       logo: entrepreneur,
       title: "How This Startup Is Fighting It Out In The Disorganized Business Of Wedding Planning",
       source: "Entrepreneur India",
-      date: "11 June 2023",
+      date: "22 May 2024",
     },
     {
       logo: yourstory,
       title: "Within two months of raising $1L, Banquethalls.co raises another round of funding",
       source: "YourStory",
-      date: "9 February 2023",
+      date: "7 July 2024",
     },
     {
       logo: vccircle,
       title: "Exclusive: Banquethalls.co gets pre-Series A funding from Sixth Sense Ventures",
       source: "VCCircle",
-      date: "9 February 2023",
+      date: "19 August 2024",
     },
     {
       logo: etlogo,
       title: "Banquethalls.co raises undisclosed funding from Sixth Sense Ventures",
       source: "etlogo",
-      date: "9 February 2023",
+      date: "30 September 2024",
     },
     {
       logo: iamwire,
       title: "Banquethalls.co Raises Pre Series A Round of Funding",
       source: "iamwire",
-      date: "9 February 2023",
+      date: "15 November 2024",
     },
     {
       logo: dealcurry,
       title: "Within two months of raising $1L, Banquethalls.co raises another round of funding",
       source: "YourStory",
-      date: "9 February 2023",
+      date: "28 December 2024",
     },
   ];
   
@@ -160,7 +159,7 @@ const Whyus = () => {
             alt="Wedding Background"
             className="w-full h-full object-cover brightness-50"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/00"></div>
         </div>
 
         {/* Hero Content */}

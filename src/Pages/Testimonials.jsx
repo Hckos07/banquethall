@@ -270,7 +270,7 @@ const Photo = () => {
             alt="background"
             className="w-full h-full object-cover brightness-50"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/00"></div>
         </div>
 
         {/* Hero Content */}

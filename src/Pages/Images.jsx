@@ -86,16 +86,16 @@ const Images = () => {
           <img
             src={weddingdecor5}
             alt="background"
-            className="w-full h-full object-cover brightness-50"
+            className="w-full h-full object-cover brightness-100"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-3xl">
-          <h1 className="text-4xl md:text-5xl ">Meet Our Customers</h1>
+          <h1 className="text-4xl md:text-5xl ">Our Event Photos</h1>
           <p className="mt-4 text-lg md:text-2xl">
-            Meet our wonderful customers and learn the magical journey they went through, with us.
+            Relive unforgettable moments through our event snapshots!
           </p>
         </div>
       </div>
