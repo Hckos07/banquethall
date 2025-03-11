@@ -100,7 +100,7 @@ const App = () => {
       platform: "Snapchat",
       username: "@banquethalls.co",
       image: makeup,
-      profileUrl: "",
+      profileUrl: "https://www.snapchat.com/add/banquethall.co",
       actionText: "Scan & Add",
       bgColor: "bg-gradient-to-r from-yellow-400 to-yellow-500",
     },

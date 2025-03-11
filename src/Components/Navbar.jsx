@@ -82,7 +82,7 @@ const Navbar = () => {
       {/* Hero Section with Overlay */}
       <div className="relative h-screen flex items-center justify-center text-white text-center pt-16">
         {/* Overlay Image */}
-        <div className="absolute inset-0 brightness-130">
+        <div className="absolute inset-0 brightness-150">
           <img
             src={wedding}
             alt="Wedding Background"
