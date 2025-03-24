@@ -11,6 +11,12 @@ import Hotelrajmahal from './Banquets/Hotelrajmahal'
 import Milanvatica from './Banquets/Milanvatica'
 import Samargrand from './Banquets/Samargrand'
 import Sarovarporico from './Banquets/Sarovarportico'
+import Edengardenlawn from './Banquets/Edengardenlawn'
+import Goldengalaxy from './Banquets/Goldengalaxylawsandresort'
+import Vrindavangrand from './Banquets/Vrindavangrand'
+import Karamvirgraden from './Banquets/Karamvirgarden'
+import Royalimperio from './Banquets/Royalimperio'
+
 
 const App = () => {
   return (
@@ -28,6 +34,11 @@ const App = () => {
           <Route path="/venues/Milanvatica" element={<Milanvatica />} />
           <Route path="/venues/Samargrand" element={<Samargrand />} />
           <Route path="/venues/Sarovarportico" element={<Sarovarporico />} />
+          <Route path="/venues/Edengardenlawn" element={<Edengardenlawn />} />
+          <Route path="/venues/Goldengalaxy" element={<Goldengalaxy />} />
+          <Route path="/venues/Vrindavangrand" element={<Vrindavangrand />} />
+          <Route path="/venues/Karamvirgarden" element={<Karamvirgraden />} />
+          <Route path="/venues/Royalimperio" element={<Royalimperio />} />
         </Routes>
       </BrowserRouter>
     </>

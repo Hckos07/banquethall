@@ -18,7 +18,7 @@ const navLinks = [
 ];
 const Images = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return (
     <>
       {/* Navbar */}

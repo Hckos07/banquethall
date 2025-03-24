@@ -237,7 +237,7 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <p className="text-black font-bold text-xl">N/A</p>
+                <s className="text-red-500 text-xl">₹800</s> /Plate
               </span>
             </div>
           </div>
@@ -380,7 +380,7 @@ const Milanvatika = () => {
       {/* About this venue */}
 
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">Venue expert notes</h2>
+        <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
           Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
           {showMore && (
@@ -419,90 +419,108 @@ const Milanvatika = () => {
 
       {/* venue policies section */}
 
-      <div className="p-6 bg-white">
+      <div className="p-6 bg-white ">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">📜 Venue Policies</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Timings & Slots */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">⏰ Timings & Slots</h3>
-            <p className="text-gray-600">(Venue closes at 5:00 AM)</p>
-            <p className="text-gray-700"><strong>Morning:</strong> 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 5:00 AM</p>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">⏳ Timings & Slots</h3>
+            <p className="text-gray-700">Morning: <strong>10:00 AM - 12:00 AM</strong></p>
           </div>
 
           {/* Taxes */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💰 Taxes</h3>
-            <p className="text-gray-700">Taxes F&B: 18.00%</p>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">💰 Taxes</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Taxes F&B: <strong>18.00%</strong></li>
+              <li>Total tax: <strong>18.0%</strong></li>
+            </ul>
           </div>
 
           {/* Lodging */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
-            <p className="text-gray-700">Rooms Available: 25</p>
-            <p className="text-gray-700">Average price per room: ₹3,000</p>
-          </div>
-
-          {/* Changing Room */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room</h3>
-            <p className="text-gray-700">No. of complimentary rooms: 1</p>
-            <p className="text-gray-700">A/C Changing Room</p>
-          </div>
-
-          {/* Parking */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking</h3>
-            <p className="text-gray-700">No valet provided</p>
-            <p className="text-gray-700">Parking space for 200 vehicles</p>
-          </div>
-
-          {/* Alcohol */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
-            <p className="text-gray-700">Alcohol allowed at the venue</p>
-            <p className="text-gray-700">No outside alcohol allowed</p>
-            <p className="text-gray-700">No corkage costs</p>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🏨 Lodging</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Rooms Available</li>
+              <li>No. of rooms: <strong>20</strong></li>
+              <li>Avg. price per room: <strong>₹1000/-</strong></li>
+            </ul>
           </div>
 
           {/* Food */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
-            <p className="text-gray-700">Food provided by the venue</p>
-            <p className="text-gray-700">No outside catering allowed</p>
-            <p className="text-gray-700">Non-veg not allowed</p>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🍽️ Food</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Food provided by the venue</li>
+              <li>No outside food/caterer allowed</li>
+              <li>Non-Veg allowed</li>
+            </ul>
+          </div>
+
+          {/* Changing Room */}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🚪 Changing Rooms</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>No. of complimentary rooms: <strong>2</strong></li>
+              <li>A/C Changing Rooms Available</li>
+            </ul>
+          </div>
+
+          {/* Parking */}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🚗 Parking</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Valet service provided</li>
+              <li>Space available for <strong>100 vehicles</strong></li>
+            </ul>
+          </div>
+
+          {/* Alcohol */}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🍾 Alcohol</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Allowed at the venue</li>
+              <li>Outside alcohol allowed</li>
+              <li>No corkage costs applicable</li>
+            </ul>
           </div>
 
           {/* Decoration */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🎨 Decoration</h3>
-            <p className="text-gray-700">No outside decorators allowed</p>
-            <p className="text-gray-700">Decor provided by the venue</p>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🎉 Decoration</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>No outside decorators allowed</li>
+              <li>Decor provided by the venue</li>
+            </ul>
           </div>
 
-          {/* Advance Payment */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💳 Advance Payment</h3>
-            <p className="text-gray-700">Total booking amount: ₹100,000</p>
+          {/* Advance */}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">💵 Advance</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>25% at the time of booking</li>
+            </ul>
           </div>
 
-          {/* Cancellation Policy */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">❌ Cancellation</h3>
-            <p className="text-gray-700">Non-cancellable</p>
+          {/* Cancellation */}
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">🚫 Cancellation</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Non-cancellable</li>
+            </ul>
           </div>
 
           {/* Other Policies */}
-          <div className="bg-white p-4 col-span-2">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">📌 Other Policies</h3>
-            <ul className="text-gray-700 list-disc pl-5">
-              <li>No music allowed late</li>
+          <div>
+            <h3 className="font-semibold text-lg text-gray-800">⚖️ Other Policies</h3>
+            <ul className="text-gray-700 list-disc ml-4">
+              <li>Music allowed late</li>
               <li>Halls are air-conditioned</li>
-              <li>Ample parking available</li>
+              <li>Ample parking</li>
               <li>Baraat allowed</li>
-              <li>No firecrackers allowed</li>
-              <li>Hawan allowed</li>
+              <li>Firecrackers allowed</li>
+              <li>No hawan allowed</li>
               <li>Overnight wedding allowed</li>
             </ul>
           </div>

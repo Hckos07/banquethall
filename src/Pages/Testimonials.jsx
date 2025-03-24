@@ -50,6 +50,7 @@ const TestimonialCard = ({ testimonial, index }) => {
   );
 };
 
+
 const TestimonialsSection = () => {
   // Sample Testimonial Data
   const testimonials = [

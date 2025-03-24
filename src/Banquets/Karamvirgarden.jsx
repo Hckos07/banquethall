@@ -52,7 +52,7 @@ const images = [
   hotelgrand7,
 ];
 
-const Milanvatika = () => {
+const Karamvirgarden = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [currentImage, setCurrentImage] = useState(0);
@@ -205,10 +205,10 @@ const Milanvatika = () => {
 
           {/* Venue Name & Location */}
           <h2 className="text-2xl font-bold mt-2">
-            Milan Vatika, Mathura Road, Faridabad
+            Dr Karamvir Garden, Sector 11, Faridabad
           </h2>
           <p className="text-gray-600 mt-1">
-            Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006{" "}
+            Dr. Karamvir Garden, Pocket D, Sector 11, Faridabad, Haryana 121006
           </p>
 
           {/* Tags */}
@@ -231,13 +231,13 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹600</s> /Plate
+                <s className="text-red-500 text-xl">₹1500</s> /Plate
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <p className="text-black font-bold text-xl">N/A</p>
+                <s className="text-red-500 text-xl">₹1800</s> /Plate
               </span>
             </div>
           </div>
@@ -257,13 +257,10 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Milan Vatika, Faridabad offers enticing services that will make the event you have always dreamed about come true.
+          Dr Karamvir Garden Sector 11 Faridabad has a lush green lawn and a charming banquet hall of mid-sized capacities, ideal for having an open-air function under the starlit sky or indoor celebrations with family and friends.
           {showMore && (
             <span>
-              Milan Vatika has well-furnished guest rooms and can accommodate many of your outstation guests with ease. It also has a convenient parking area for guests and other in-house benefits to make things easy for you.
-
-
-              Milan Vatika Faridabad is a prestigious venue to gather your loved ones and plan a dreamy wedding ceremony.
+              It also has a spacious banquet hall for having an indoor function and provide impeccable service to their guests. It has a lovely seating arrangement that offers comfort to your invitees. The well-furnished hall and bright-colored interiors here at Karamvir Gardens, Faridabad, make the venue look simply picture-perfect.
             </span>
           )}
           <button
@@ -274,7 +271,7 @@ const Milanvatika = () => {
           </button>
         </p>
         <div className="flex items-center space-x-3 mt-4">
-          <span className="text-lg font-semibold">Call Milan Vatika</span>
+          <span className="text-lg font-semibold">Call Karamvir Garden</span>
           <FaPhone className="text-green-500 text-2xl" />
         </div>
         <p className="text-gray-800 text-lg mt-1">+91-8375967071</p>
@@ -322,13 +319,13 @@ const Milanvatika = () => {
 
       {/* maps section */}
 
-      <div className="p-6 bg-gray-50">
+      <div className="p-6 bg-white">
         {/* Venue Address Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-2">📍 Venue Address</h2>
         <p className="text-gray-700 mb-4">
-          Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006
+          Dr. Karamvir Garden, Banquet Hall (Weddingz.in Partner), Faridabad, Haryana 121006
           <a
-            href="https://www.google.co.in/maps/place/Milan+Vatika/@28.3760353,77.3097697,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdc6c1c9c8963:0xc034260f776e4162!8m2!3d28.3760354!4d77.3146406!16s%2Fg%2F1tf7kyfm?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.co.in/maps/place/Dr.+Karamvir+Garden,+Banquet+Hall+(Weddingz.in+Partner)/@28.3764292,77.3155493,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdde7832f98b9:0x125f56bf964cdfbb!8m2!3d28.3764292!4d77.3181242!16s%2Fg%2F11hdz06gxs?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline ml-2"
@@ -338,7 +335,7 @@ const Milanvatika = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Google Maps Embed for Milan Vatika, Faridabad */}
+          {/* Google Maps Embed for Dr. Karamvir Garden, Faridabad */}
           <div className="rounded-lg overflow-hidden border shadow-lg">
             <iframe
               title="Google Maps"
@@ -348,7 +345,7 @@ const Milanvatika = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.857951583881!2d77.3097697!3d28.3760353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc6c1c9c8963%3A0xc034260f776e4162!2sMilan%20Vatika!5e0!3m2!1sen!2sin!4v1710172592489"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.752136356626!2d77.3155493!3d28.3764292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdde7832f98b9%3A0x125f56bf964cdfbb!2sDr.%20Karamvir%20Garden%2C%20Banquet%20Hall%20(Weddingz.in%20Partner)!5e0!3m2!1sen!2sin!4v1710172592489"
             ></iframe>
           </div>
 
@@ -380,12 +377,12 @@ const Milanvatika = () => {
       {/* About this venue */}
 
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">Venue expert notes</h2>
+        <h2 className="text-2xl font-bold mb-2">Venue Expert Notes</h2>
         <p className="text-gray-700 mb-2">
-          Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
+          Come and celebrate your big day at Dr. Karamvir Garden, Faridabad, to make some beautiful memories. Home to a couple of lush green lawns and a mid-sized banquet hall with exquisite interiors, the
           {showMore && (
             <span>
-              this venue is very easy for all to find and reach. Events are successful when all small things are taken care of and hence, this venue takes care of all your catering, alcohol, accommodation, as well as decor-related needs for your event. This party place looks luxurious and welcoming, abundant with well-placed lights and chandeliers. So make sure you check out Milan Vatika, Faridabad now!
+              venue is perfect for lavish weddings, reception, sangeet, mehndi, haldi, engagement functions, birthdays, and anniversaries, promotion and farewell parties, cocktail and bachelor/bachelorette parties, and even some corporate retreats. Located 10 minutes away from Faridabad New Town Railway Station and about an hour away from Indira Gandhi International Airport, it is easily accessible for everyone. Catering, decor, and alcohol are covered by in-house experts at the venue. Ample parking space, valet services, and a couple of changing rooms are offered as well. Book Dr. Karamvir Garden for your big day.
             </span>
           )}
           <button
@@ -406,12 +403,12 @@ const Milanvatika = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 text-gray-800">
           <ul className="space-y-3">
-            <li>• Lodging and parking facilities available</li>
-            <li>• Located 700m distance from Faridabad New Town railway station</li>
+            <li>• Ample parking space with valet service</li>
+            <li>• 10 minutes away from Faridabad New Town Railway Station</li>
           </ul>
           <ul className="space-y-3">
-            <li>• In-house decorators & catering service</li>
-            <li>• Serves both vegetarian and non-vegetarian food</li>
+            <li>• Wedding lawn and banquet hall in Faridabad for weddings and events</li>
+            <li>• In-house decor and catering services provided</li>
           </ul>
         </div>
       </div>
@@ -426,9 +423,9 @@ const Milanvatika = () => {
           {/* Timings & Slots */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">⏰ Timings & Slots</h3>
-            <p className="text-gray-600">(Venue closes at 5:00 AM)</p>
-            <p className="text-gray-700"><strong>Morning:</strong> 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 5:00 AM</p>
+            <p className="text-gray-600">(Venue closes at 12:00 AM)</p>
+            <p className="text-gray-700"><strong>Morning:</strong> 10:00 AM - 6:00 PM</p>
+            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 12:00 AM</p>
           </div>
 
           {/* Taxes */}
@@ -440,21 +437,20 @@ const Milanvatika = () => {
           {/* Lodging */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
-            <p className="text-gray-700">Rooms Available: 25</p>
-            <p className="text-gray-700">Average price per room: ₹3,000</p>
+            <p className="text-gray-700">No rooms available</p>
           </div>
 
           {/* Changing Room */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room</h3>
-            <p className="text-gray-700">No. of complimentary rooms: 1</p>
+            <p className="text-gray-700"><strong>No. of complimentary rooms:</strong> 2</p>
             <p className="text-gray-700">A/C Changing Room</p>
           </div>
 
           {/* Parking */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking</h3>
-            <p className="text-gray-700">No valet provided</p>
+            <p className="text-gray-700">Valet provided by venue</p>
             <p className="text-gray-700">Parking space for 200 vehicles</p>
           </div>
 
@@ -462,16 +458,16 @@ const Milanvatika = () => {
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
             <p className="text-gray-700">Alcohol allowed at the venue</p>
-            <p className="text-gray-700">No outside alcohol allowed</p>
-            <p className="text-gray-700">No corkage costs</p>
+            <p className="text-gray-700">Outside alcohol allowed at the venue</p>
+            <p className="text-gray-700">Corkage costs applicable</p>
           </div>
 
           {/* Food */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
             <p className="text-gray-700">Food provided by the venue</p>
-            <p className="text-gray-700">No outside catering allowed</p>
-            <p className="text-gray-700">Non-veg not allowed</p>
+            <p className="text-gray-700">Outside catering allowed</p>
+            <p className="text-gray-700">Non-veg allowed</p>
           </div>
 
           {/* Decoration */}
@@ -484,7 +480,7 @@ const Milanvatika = () => {
           {/* Advance Payment */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">💳 Advance Payment</h3>
-            <p className="text-gray-700">Total booking amount: ₹100,000</p>
+            <p className="text-gray-700">25% at the time of booking</p>
           </div>
 
           {/* Cancellation Policy */}
@@ -501,7 +497,7 @@ const Milanvatika = () => {
               <li>Halls are air-conditioned</li>
               <li>Ample parking available</li>
               <li>Baraat allowed</li>
-              <li>No firecrackers allowed</li>
+              <li>Firecrackers allowed</li>
               <li>Hawan allowed</li>
               <li>Overnight wedding allowed</li>
             </ul>
@@ -568,4 +564,4 @@ const Milanvatika = () => {
   );
 };
 
-export default Milanvatika;
+export default Karamvirgarden;

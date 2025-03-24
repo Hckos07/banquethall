@@ -52,7 +52,7 @@ const images = [
   hotelgrand7,
 ];
 
-const Milanvatika = () => {
+const Goldengalaxylawsandresort = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [currentImage, setCurrentImage] = useState(0);
@@ -205,10 +205,10 @@ const Milanvatika = () => {
 
           {/* Venue Name & Location */}
           <h2 className="text-2xl font-bold mt-2">
-            Milan Vatika, Mathura Road, Faridabad
+            Golden Galaxy Hotels And Resorts, Mathura Road, Faridabad
           </h2>
           <p className="text-gray-600 mt-1">
-            Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006{" "}
+            Golden Galaxy, Ballabgarh, Delhi Mathura Road, Faridabad, Haryana 121004{" "}
           </p>
 
           {/* Tags */}
@@ -231,13 +231,13 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹600</s> /Plate
+                <s className="text-red-500 text-xl">2000</s> /Plate
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <p className="text-black font-bold text-xl">N/A</p>
+                <p className="text-black text-xl font-bold">N/A</p>
               </span>
             </div>
           </div>
@@ -257,13 +257,11 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Milan Vatika, Faridabad offers enticing services that will make the event you have always dreamed about come true.
+          Golden Galaxy Hotels & Resorts, Faridabad offers a gorgeous marriage hall for your special day. The venue is located near the Delhi Public School which is a known spot for the locals living nearby. At 
           {showMore && (
             <span>
-              Milan Vatika has well-furnished guest rooms and can accommodate many of your outstation guests with ease. It also has a convenient parking area for guests and other in-house benefits to make things easy for you.
-
-
-              Milan Vatika Faridabad is a prestigious venue to gather your loved ones and plan a dreamy wedding ceremony.
+              Golden Galaxy Faridabad, one can plan pre-wedding ceremonies, weddings, and lavish receptions. Their hall, terrace area, and lawns will spoil you for choice also their decorators will make sure that you have the picture-perfect wedding. The inviting ambiance of the Golden Galaxy Hotel Faridabad makes everyone feel welcomed.
+              While you get amazed by the beautiful Golden Galaxy Hotels & Resorts, Mathura Road, Faridabad your guests will be treated to a delicious feast by their chefs and get pampered by their hospitable staff. It serves scrumptious vegetarian food for their guests. The elegant decor of the Golden Galaxy Resort Faridabad makes it an ideal option for a grand wedding. It has luxurious rooms for the guests which gives them a comfortable stay. Book Golden Galaxy Hotels & Resorts, Faridabad today to have a grand celebration.
             </span>
           )}
           <button
@@ -274,7 +272,7 @@ const Milanvatika = () => {
           </button>
         </p>
         <div className="flex items-center space-x-3 mt-4">
-          <span className="text-lg font-semibold">Call Milan Vatika</span>
+          <span className="text-lg font-semibold">Call Golden Galaxy Laws and Resorts</span>
           <FaPhone className="text-green-500 text-2xl" />
         </div>
         <p className="text-gray-800 text-lg mt-1">+91-8375967071</p>
@@ -322,13 +320,13 @@ const Milanvatika = () => {
 
       {/* maps section */}
 
-      <div className="p-6 bg-gray-50">
+      <div className="p-6 bg-white">
         {/* Venue Address Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-2">📍 Venue Address</h2>
         <p className="text-gray-700 mb-4">
-          Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006
+          Golden Galaxy Hotels & Resorts, Faridabad, Haryana
           <a
-            href="https://www.google.co.in/maps/place/Milan+Vatika/@28.3760353,77.3097697,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdc6c1c9c8963:0xc034260f776e4162!8m2!3d28.3760354!4d77.3146406!16s%2Fg%2F1tf7kyfm?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.co.in/maps/place/Golden+Galaxy+Hotels+%26+Resorts/@28.2883984,77.2921574,17z/data=!4m9!3m8!1s0x390cda22f2680bcf:0xc57b0ab441ca9418!5m2!4m1!1i2!8m2!3d28.2883984!4d77.2947323!16s%2Fg%2F12cpc9sly?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline ml-2"
@@ -338,7 +336,7 @@ const Milanvatika = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Google Maps Embed for Milan Vatika, Faridabad */}
+          {/* Google Maps Embed for Golden Galaxy Hotels & Resorts */}
           <div className="rounded-lg overflow-hidden border shadow-lg">
             <iframe
               title="Google Maps"
@@ -348,7 +346,7 @@ const Milanvatika = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.857951583881!2d77.3097697!3d28.3760353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc6c1c9c8963%3A0xc034260f776e4162!2sMilan%20Vatika!5e0!3m2!1sen!2sin!4v1710172592489"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4385.327940472098!2d77.2921574!3d28.2883984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cda22f2680bcf%3A0xc57b0ab441ca9418!2sGolden%20Galaxy%20Hotels%20%26%20Resorts!5e0!3m2!1sen!2sin!4v1710172592489"
             ></iframe>
           </div>
 
@@ -380,12 +378,13 @@ const Milanvatika = () => {
       {/* About this venue */}
 
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">Venue expert notes</h2>
+        <h2 className="text-2xl font-bold mb-2">Venue Expert Notes</h2>
         <p className="text-gray-700 mb-2">
-          Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
+          The Golden Galaxy Hotels and Resorts located in Mathura Road, Faridabad has Wedding Hotels, Cocktail Venues, Banquet Halls, Wedding Lawns, Terrace Banquet Halls, Heritage Wedding Venues, Party,
           {showMore && (
             <span>
-              this venue is very easy for all to find and reach. Events are successful when all small things are taken care of and hence, this venue takes care of all your catering, alcohol, accommodation, as well as decor-related needs for your event. This party place looks luxurious and welcoming, abundant with well-placed lights and chandeliers. So make sure you check out Milan Vatika, Faridabad now!
+              Halls, Party Plots, Marriage Halls. Terrace + Poolside Area can accomodate upto 250 guests in seating and 375 guests in floating. Polaris can accomodate upto 300 guests in seating and 500 guests in floating. Polaris + Lawn 1 ( Hall + Lawn) can accomodate upto 600 guests in seating and 1000 guests in floating. Polaris + Lawn 2 ( Hall + Lawn) can accomodate upto 1200 guests in seating and 2000 guests in floating.
+              Vegetarian food is served at this venue. Features of this wedding venues are : Food provided by the venue, Alcohol allowed at the venue, Outside alcohol allowed at the venue, Halls are air Conditioned, Ample parking, Baarat allowed, Hawan allowed, Overnight wedding allowed, Decor provided by the venue, Packages starts at Rs 2000 per plate for vegetarian menu and at Rs N/A for non veg menu.
             </span>
           )}
           <button
@@ -406,12 +405,12 @@ const Milanvatika = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 text-gray-800">
           <ul className="space-y-3">
-            <li>• Lodging and parking facilities available</li>
-            <li>• Located 700m distance from Faridabad New Town railway station</li>
+            <li>• Spacious banquet hall</li>
+            <li>• In-house decorators and caterers take care of everything</li>
           </ul>
           <ul className="space-y-3">
-            <li>• In-house decorators & catering service</li>
-            <li>• Serves both vegetarian and non-vegetarian food</li>
+            <li>• Terrace and poolside combined together for convenience</li>
+            <li>• Banquet attached to banquet for convenience</li>
           </ul>
         </div>
       </div>
@@ -420,86 +419,87 @@ const Milanvatika = () => {
       {/* venue policies section */}
 
       <div className="p-6 bg-white">
+        {/* Venue Policies Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-4">📜 Venue Policies</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Timings & Slots */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">⏰ Timings & Slots</h3>
-            <p className="text-gray-600">(Venue closes at 5:00 AM)</p>
-            <p className="text-gray-700"><strong>Morning:</strong> 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 5:00 AM</p>
+          <div className="bg-white p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">⏰ Timings & Slots</h3>
+            <p className="text-gray-600">Venue closes at 7:00 AM</p>
+            <p className="text-gray-700 font-medium">Morning: 8:00 AM - 7:00 AM</p>
           </div>
 
           {/* Taxes */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💰 Taxes</h3>
+          <div className="bg-white p-4">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">💰 Taxes</h3>
             <p className="text-gray-700">Taxes F&B: 18.00%</p>
           </div>
 
           {/* Lodging */}
           <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
-            <p className="text-gray-700">Rooms Available: 25</p>
-            <p className="text-gray-700">Average price per room: ₹3,000</p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🏨 Lodging</h3>
+            <p className="text-gray-700">No rooms available</p>
           </div>
 
-          {/* Changing Room */}
+          {/* Changing Rooms */}
           <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room</h3>
-            <p className="text-gray-700">No. of complimentary rooms: 1</p>
-            <p className="text-gray-700">A/C Changing Room</p>
-          </div>
-
-          {/* Parking */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking</h3>
-            <p className="text-gray-700">No valet provided</p>
-            <p className="text-gray-700">Parking space for 200 vehicles</p>
-          </div>
-
-          {/* Alcohol */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
-            <p className="text-gray-700">Alcohol allowed at the venue</p>
-            <p className="text-gray-700">No outside alcohol allowed</p>
-            <p className="text-gray-700">No corkage costs</p>
-          </div>
-
-          {/* Food */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
-            <p className="text-gray-700">Food provided by the venue</p>
-            <p className="text-gray-700">No outside catering allowed</p>
-            <p className="text-gray-700">Non-veg not allowed</p>
-          </div>
-
-          {/* Decoration */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🎨 Decoration</h3>
-            <p className="text-gray-700">No outside decorators allowed</p>
-            <p className="text-gray-700">Decor provided by the venue</p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🚪 Changing Rooms</h3>
+            <p className="text-gray-700">No. of complimentary changing rooms: 2</p>
+            <p className="text-gray-700">Changing Room A/C</p>
           </div>
 
           {/* Advance Payment */}
           <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💳 Advance Payment</h3>
-            <p className="text-gray-700">Total booking amount: ₹100,000</p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">💳 Advance</h3>
+            <p className="text-gray-700">25% at the time of booking</p>
           </div>
 
-          {/* Cancellation Policy */}
+          {/* Parking */}
           <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">❌ Cancellation</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🚗 Parking</h3>
+            <p className="text-gray-700">Valet provided by venue</p>
+            <p className="text-gray-700">Parking space for 200 vehicles</p>
+          </div>
+
+          {/* Cancellation */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🚫 Cancellation</h3>
             <p className="text-gray-700">Non-cancellable</p>
           </div>
 
+          {/* Alcohol */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🍷 Alcohol</h3>
+            <p className="text-gray-700">Alcohol allowed at the venue</p>
+            <p className="text-gray-700">Outside alcohol allowed</p>
+            <p className="text-gray-700">Corkage costs applicable</p>
+          </div>
+
+          {/* Food */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🍽 Food</h3>
+            <p className="text-gray-700">Food provided by the venue</p>
+            <p className="text-gray-700">Outside food/caterer allowed</p>
+            <p className="text-gray-700">Non-veg allowed</p>
+          </div>
+
+          {/* Decoration */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">🎀 Decoration</h3>
+            <p className="text-gray-700">Outside decorators allowed</p>
+            <p className="text-gray-700">No royalty for decorators</p>
+            <p className="text-gray-700">Decoration starts at ₹16,000</p>
+            <p className="text-gray-700">Decor provided by the venue</p>
+          </div>
+
           {/* Other Policies */}
-          <div className="bg-white p-4 col-span-2">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">📌 Other Policies</h3>
-            <ul className="text-gray-700 list-disc pl-5">
+          <div className="bg-white p-4 lg:col-span-2">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">⚖️ Other Policies</h3>
+            <ul className="list-disc pl-4 text-gray-700">
               <li>No music allowed late</li>
               <li>Halls are air-conditioned</li>
-              <li>Ample parking available</li>
+              <li>Ample parking</li>
               <li>Baraat allowed</li>
               <li>No firecrackers allowed</li>
               <li>Hawan allowed</li>
@@ -568,4 +568,4 @@ const Milanvatika = () => {
   );
 };
 
-export default Milanvatika;
+export default Goldengalaxylawsandresort;

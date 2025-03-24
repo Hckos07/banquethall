@@ -52,7 +52,7 @@ const images = [
   hotelgrand7,
 ];
 
-const Milanvatika = () => {
+const Edengardenlawn = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [currentImage, setCurrentImage] = useState(0);
@@ -205,10 +205,10 @@ const Milanvatika = () => {
 
           {/* Venue Name & Location */}
           <h2 className="text-2xl font-bold mt-2">
-            Milan Vatika, Mathura Road, Faridabad
+            Eden Garden Lawn, Suraj Kund Badkhal Road, Faridabad
           </h2>
           <p className="text-gray-600 mt-1">
-            Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006{" "}
+            Eden Garden Lawn, Opposite Sidharth Temple And Laxmi Narayan, Surajkund, Uadahal Lake, Faridabad 121001
           </p>
 
           {/* Tags */}
@@ -231,13 +231,13 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹600</s> /Plate
+                <s className="text-red-500 text-xl">₹1000</s> /Plate
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <p className="text-black font-bold text-xl">N/A</p>
+                <s className="text-red-500 text-xl">₹1200</s> /Plate
               </span>
             </div>
           </div>
@@ -257,13 +257,12 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Milan Vatika, Faridabad offers enticing services that will make the event you have always dreamed about come true.
+          Eden Garden Lawn, Faridabad, is a fabulous venue for hosting your dream wedding and reception ceremony. Located near the Shri Sidhdata Ashram, which is a known spot for the locals living nearby, this
           {showMore && (
             <span>
-              Milan Vatika has well-furnished guest rooms and can accommodate many of your outstation guests with ease. It also has a convenient parking area for guests and other in-house benefits to make things easy for you.
-
-
-              Milan Vatika Faridabad is a prestigious venue to gather your loved ones and plan a dreamy wedding ceremony.
+              venue makes it hassle-free for all to arrive here. It is positioned about 15 mins away from both Sector 28 Metro Station and Faridabad Train Station. Eden Garden Faridabad has a couple of spacious and lush green lawns that can accommodate a huge crowd for your function. These lawns are ideal for an open-air function under the star-lit sky.
+              Eden Garden Lawn, Suraj Kund Badkhal Road, Faridabad serves flavorsome delicacies in both vegetarian and non-vegetarian variants to choose from. The elegant decor of Eden Garden Lawn 1 Faridabad is perfect for your big day. However, if you wish to enhance the look for your event, there's an on-site decor team, or you can get your preferred decorators from outside. Add alcohol and see everyone having a good time. Ample and valet parking space offers convenience for all.
+              <p>Look your best and make heads turn as the venue offers complimentary changing rooms. The inviting ambiance and the freshness of the lawns make everyone feel welcomed. Book Eden Garden Lawn, Faridabad, Haryana, to make your events memorable.</p>
             </span>
           )}
           <button
@@ -274,7 +273,7 @@ const Milanvatika = () => {
           </button>
         </p>
         <div className="flex items-center space-x-3 mt-4">
-          <span className="text-lg font-semibold">Call Milan Vatika</span>
+          <span className="text-lg font-semibold">Call Eden Garden Lawn</span>
           <FaPhone className="text-green-500 text-2xl" />
         </div>
         <p className="text-gray-800 text-lg mt-1">+91-8375967071</p>
@@ -322,13 +321,13 @@ const Milanvatika = () => {
 
       {/* maps section */}
 
-      <div className="p-6 bg-gray-50">
+      <div className="p-6 bg-white">
         {/* Venue Address Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-2">📍 Venue Address</h2>
         <p className="text-gray-700 mb-4">
-          Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006
+          Eden Garden By Capital, Near Sidhdata, Surajkund Road, Faridabad, Haryana
           <a
-            href="https://www.google.co.in/maps/place/Milan+Vatika/@28.3760353,77.3097697,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdc6c1c9c8963:0xc034260f776e4162!8m2!3d28.3760354!4d77.3146406!16s%2Fg%2F1tf7kyfm?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.co.in/maps/place/Eden+Garden+By+Capital,+Near+Sidhdata+,+Surajkund+Road,+Faridabad,+Haryana/@28.4375752,77.2795048,17z/data=!4m10!1m2!2m1!1sEden+Garden+Lawn,+Suraj+Kund+Badkhal+Road,+Faridabad!3m6!1s0x390cdfdc2bdc0301:0xe3ffaa90cdf9bd1!8m2!3d28.4375285!4d77.2822964!15sCjRFZGVuIEdhcmRlbiBMYXduLCBTdXJhaiBLdW5kIEJhZGtoYWwgUm9hZCwgRmFyaWRhYmFkWjQiMmVkZW4gZ2FyZGVuIGxhd24gc3VyYWoga3VuZCBiYWRraGFsIHJvYWQgZmFyaWRhYmFkkgELZXZlbnRfdmVudWXgAQA!16s%2Fg%2F11r4wnqqqd?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline ml-2"
@@ -338,7 +337,7 @@ const Milanvatika = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Google Maps Embed for Milan Vatika, Faridabad */}
+          {/* Google Maps Embed for Eden Garden By Capital, Faridabad */}
           <div className="rounded-lg overflow-hidden border shadow-lg">
             <iframe
               title="Google Maps"
@@ -348,7 +347,7 @@ const Milanvatika = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.857951583881!2d77.3097697!3d28.3760353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc6c1c9c8963%3A0xc034260f776e4162!2sMilan%20Vatika!5e0!3m2!1sen!2sin!4v1710172592489"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4384.348760239758!2d77.2795048!3d28.4375752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdfdc2bdc0301%3A0xe3ffaa90cdf9bd1!2sEden%20Garden%20By%20Capital%2C%20Near%20Sidhdata%2C%20Surajkund%20Road%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1710172592489"
             ></iframe>
           </div>
 
@@ -382,10 +381,10 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">Venue expert notes</h2>
         <p className="text-gray-700 mb-2">
-          Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
+          Plan your big days at Eden Garden Lawn, Faridabad, to make them extra special. A popular wedding venue in the bustling city of Faridabad, it offers a couple of lush lawns that can accommodate over a
           {showMore && (
             <span>
-              this venue is very easy for all to find and reach. Events are successful when all small things are taken care of and hence, this venue takes care of all your catering, alcohol, accommodation, as well as decor-related needs for your event. This party place looks luxurious and welcoming, abundant with well-placed lights and chandeliers. So make sure you check out Milan Vatika, Faridabad now!
+              thousand guests each and are perfect for grandiose weddings, receptions, and pre-wedding ceremonies. Placed at a convenient location, it is 15 mins away from Sector 28 Metro Station. You will receive excellent catering, decor, and hospitality services, and the efficient staff here will help you pull off a well-organized, vibrant, and successful event. Ample parking space, valet services, and a couple of well-furnished changing rooms are added perks of the venue. Eden Garden Lawn gives you all the right reasons to add it to your list for your forthcoming occasions.
             </span>
           )}
           <button
@@ -406,12 +405,12 @@ const Milanvatika = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 text-gray-800">
           <ul className="space-y-3">
-            <li>• Lodging and parking facilities available</li>
-            <li>• Located 700m distance from Faridabad New Town railway station</li>
+            <li>• Valet parking with ample space</li>
+            <li>• Situated about 15 mins away from Sector 28 Metro Station</li>
           </ul>
           <ul className="space-y-3">
-            <li>• In-house decorators & catering service</li>
-            <li>• Serves both vegetarian and non-vegetarian food</li>
+            <li>• Serves both vegetarian and non-vegetarian meals</li>
+            <li>• Sprawling lawns apt for large-sized gatherings</li>
           </ul>
         </div>
       </div>
@@ -422,89 +421,94 @@ const Milanvatika = () => {
       <div className="p-6 bg-white">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">📜 Venue Policies</h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {/* Timings & Slots */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">⏰ Timings & Slots</h3>
-            <p className="text-gray-600">(Venue closes at 5:00 AM)</p>
-            <p className="text-gray-700"><strong>Morning:</strong> 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 5:00 AM</p>
+          <div>
+            <h3 className="text-xl font-semibold">⏳ Timings & Slots</h3>
+            <p className="text-gray-700">Morning: <strong>8:00 AM - 7:00 AM</strong> (Venue closes at 7:00 AM)</p>
           </div>
 
           {/* Taxes */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💰 Taxes</h3>
-            <p className="text-gray-700">Taxes F&B: 18.00%</p>
+          <div>
+            <h3 className="text-xl font-semibold">💰 Taxes</h3>
+            <p className="text-gray-700">Taxes F&B: <strong>18.00%</strong></p>
           </div>
 
           {/* Lodging */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
-            <p className="text-gray-700">Rooms Available: 25</p>
-            <p className="text-gray-700">Average price per room: ₹3,000</p>
+          <div>
+            <h3 className="text-xl font-semibold">🏨 Lodging</h3>
+            <p className="text-gray-700">No rooms available</p>
           </div>
 
-          {/* Changing Room */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room</h3>
-            <p className="text-gray-700">No. of complimentary rooms: 1</p>
-            <p className="text-gray-700">A/C Changing Room</p>
+          {/* Changing Rooms */}
+          <div>
+            <h3 className="text-xl font-semibold">🚪 Changing Rooms</h3>
+            <p className="text-gray-700">No. of complimentary rooms: <strong>2</strong></p>
+            <p className="text-gray-700">A/C Changing Rooms Available</p>
           </div>
 
           {/* Parking */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking</h3>
-            <p className="text-gray-700">No valet provided</p>
-            <p className="text-gray-700">Parking space for 200 vehicles</p>
-          </div>
-
-          {/* Alcohol */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
-            <p className="text-gray-700">Alcohol allowed at the venue</p>
-            <p className="text-gray-700">No outside alcohol allowed</p>
-            <p className="text-gray-700">No corkage costs</p>
+          <div>
+            <h3 className="text-xl font-semibold">🚗 Parking</h3>
+            <p className="text-gray-700">Valet service provided</p>
+            <p className="text-gray-700">Space available for <strong>200 vehicles</strong></p>
           </div>
 
           {/* Food */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
-            <p className="text-gray-700">Food provided by the venue</p>
-            <p className="text-gray-700">No outside catering allowed</p>
-            <p className="text-gray-700">Non-veg not allowed</p>
+          <div>
+            <h3 className="text-xl font-semibold">🍽️ Food</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Food provided by the venue</li>
+              <li>Outside food/caterer allowed</li>
+              <li>Non-Veg allowed</li>
+            </ul>
+          </div>
+
+          {/* Alcohol */}
+          <div>
+            <h3 className="text-xl font-semibold">🍾 Alcohol</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Allowed at the venue</li>
+              <li>Outside alcohol allowed</li>
+              <li>Corkage costs applicable</li>
+            </ul>
           </div>
 
           {/* Decoration */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">🎨 Decoration</h3>
-            <p className="text-gray-700">No outside decorators allowed</p>
-            <p className="text-gray-700">Decor provided by the venue</p>
-          </div>
-
-          {/* Advance Payment */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">💳 Advance Payment</h3>
-            <p className="text-gray-700">Total booking amount: ₹100,000</p>
-          </div>
-
-          {/* Cancellation Policy */}
-          <div className="bg-white p-4 ">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">❌ Cancellation</h3>
-            <p className="text-gray-700">Non-cancellable</p>
+          <div>
+            <h3 className="text-xl font-semibold">🎉 Decoration</h3>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Outside decorators allowed</li>
+              <li>Decorators allowed without royalty</li>
+              <li>Decoration starting costs at ₹16,000</li>
+              <li>Decor provided by the venue</li>
+            </ul>
           </div>
 
           {/* Other Policies */}
-          <div className="bg-white p-4 col-span-2">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">📌 Other Policies</h3>
-            <ul className="text-gray-700 list-disc pl-5">
+          <div>
+            <h3 className="text-xl font-semibold">⚖️ Other Policies</h3>
+            <ul className="list-disc list-inside text-gray-700">
               <li>No music allowed late</li>
               <li>Halls are air-conditioned</li>
-              <li>Ample parking available</li>
+              <li>Ample parking</li>
               <li>Baraat allowed</li>
               <li>No firecrackers allowed</li>
               <li>Hawan allowed</li>
               <li>Overnight wedding allowed</li>
             </ul>
+          </div>
+
+          {/* Cancellation */}
+          <div>
+            <h3 className="text-xl font-semibold">❌ Cancellation</h3>
+            <p className="text-gray-700">Non-cancellable</p>
+          </div>
+
+          {/* Advance Payment */}
+          <div>
+            <h3 className="text-xl font-semibold">💵 Advance</h3>
+            <p className="text-gray-700">25% at the time of booking</p>
           </div>
         </div>
       </div>
@@ -568,4 +572,4 @@ const Milanvatika = () => {
   );
 };
 
-export default Milanvatika;
+export default Edengardenlawn;

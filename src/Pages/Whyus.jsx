@@ -88,7 +88,7 @@ const Whyus = () => {
       date: "28 December 2024",
     },
   ];
-  
+
   
   return (
     <>

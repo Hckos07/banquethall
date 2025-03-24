@@ -1,12 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { FaStarHalfAlt, FaRegStar, FaStar, FaPhone, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 import Footer from "../Components/Footer";
-import hotelgrand1 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway1.jpeg";
+import hotelgrand1 from "/src/assets/Venuesphotos/hotelgrandgihway1.jpeg";
 import hotelgrand2 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway2.jpeg";
 import hotelgrand3 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway3.jpeg";
 import hotelgrand4 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway4.jpeg";
@@ -80,13 +79,20 @@ const Photo = () => {
   ];
 
   // Image slider functions
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % images.length);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerSlide = 2; // Number of images visible at once
+
+  // Ensure the index loops within the range
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + itemsPerSlide) % images.length);
   };
 
-  const prevImage = () => {
-    setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+  const prevSlide = () => {
+    setCurrentIndex((prev) =>
+      prev - itemsPerSlide < 0 ? images.length - itemsPerSlide : prev - itemsPerSlide
+    );
   };
+
 
   const [showMore, setShowMore] = useState(false);
 
@@ -180,21 +186,29 @@ const Photo = () => {
       {/* Venue Gallery Section */}
       <div className="max-w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Image Slider */}
-        <div className="relative w-full h-96">
-          <img
-            src={images[currentImage]}
-            alt="Venue"
-            className="w-full h-full object-cover"
-          />
+        <div className="relative w-full overflow-hidden">
+          {/* Image Container */}
+          <div className="flex transition-transform duration-500 ease-in-out"
+            style={{ transform: `translateX(-${currentIndex * (100 / itemsPerSlide)}%)` }}>
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Slide ${index}`}
+                className="w-1/3 h-96 object-cover flex-shrink-0"
+              />
+            ))}
+          </div>
+
           {/* Navigation Buttons */}
           <button
-            onClick={prevImage}
+            onClick={prevSlide}
             className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
           >
             <FaChevronLeft size={20} />
           </button>
           <button
-            onClick={nextImage}
+            onClick={nextSlide}
             className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full"
           >
             <FaChevronRight size={20} />
@@ -286,7 +300,7 @@ const Photo = () => {
           <span className="text-lg font-semibold">Call Hotel Grand Highway</span>
           <FaPhone className="text-green-500 text-2xl" />
         </div>
-        <p className="text-gray-800 text-lg mt-1">+91-8048123098</p>
+        <p className="text-gray-800 text-lg mt-1">+91-8375967071</p>
         <div className="mt-4 p-3 border border-blue-400 bg-blue-100 text-blue-600 rounded-lg flex items-center space-x-2">
           <span className="text-lg font-semibold">⚡ Hurry UP! This Venue Is In High Demand</span>
         </div>
@@ -390,7 +404,7 @@ const Photo = () => {
       {/* About this venue */}
 
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">About this venue</h2>
+        <h2 className="text-2xl font-bold mb-2">Venue Expert notes</h2>
         <p className="text-gray-700 mb-2">
           Hotel Grand Highway, Faridabad, is an elegant hotel located off Mathura Road, promising comfort and excellent services at very pocket-friendly prices. It offers a couple of spacious banquet halls
           {showMore && (

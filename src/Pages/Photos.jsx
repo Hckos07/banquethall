@@ -40,6 +40,7 @@ const Photo = () => {
     { title: "DESTINATION WEDDING", image: destinationwedding },
   ];
 
+
   return (
     <>
       {/* Navbar */}
