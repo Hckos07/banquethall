@@ -22,6 +22,9 @@ const Footer = () => {
               <li>
                 <a href="/photos" className="text-gray-400 hover:text-white transition">Photos</a>
               </li>
+              <li>
+                <a href="/images" className="text-gray-400 hover:text-white transition">Images</a>
+              </li>
             </ul>
 
             {/* Map Section */}

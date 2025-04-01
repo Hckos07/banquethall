@@ -16,6 +16,8 @@ import Goldengalaxy from './Banquets/Goldengalaxylawsandresort'
 import Vrindavangrand from './Banquets/Vrindavangrand'
 import Karamvirgraden from './Banquets/Karamvirgarden'
 import Royalimperio from './Banquets/Royalimperio'
+import Queenlawnandbanquet from './Banquets/Queenlawnandbanquet'
+import Sevendayzvatika from './Banquets/Sevendayzvatika'
 
 
 const App = () => {
@@ -39,6 +41,8 @@ const App = () => {
           <Route path="/venues/Vrindavangrand" element={<Vrindavangrand />} />
           <Route path="/venues/Karamvirgarden" element={<Karamvirgraden />} />
           <Route path="/venues/Royalimperio" element={<Royalimperio />} />
+          <Route path="/venues/Queenlawnandbanquet" element={<Queenlawnandbanquet />} />
+          <Route path="/venues/Sevendayzvatika" element={<Sevendayzvatika />} />
         </Routes>
       </BrowserRouter>
     </>

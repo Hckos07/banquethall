@@ -13,6 +13,7 @@ import hotelgrand5 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuespho
 import hotelgrand6 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway6.jpeg";
 import hotelgrand7 from "/Users/hckos/Desktop/banquethall 2/src/assets/Venuesphotos/hotelgrandgihway7.jpeg";
 import customerimage from "../assets/customerimage.svg"
+import CallRequestForm from "../Components/CallRequestForm";
 
 const reviews = [
   {
@@ -52,7 +53,7 @@ const images = [
   hotelgrand7,
 ];
 
-const Milanvatika = () => {
+const Sevendayzvatika = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [currentImage, setCurrentImage] = useState(0);
@@ -205,12 +206,11 @@ const Milanvatika = () => {
 
           {/* Venue Name & Location */}
           <h2 className="text-2xl font-bold mt-2">
-            Milan Vatika, Mathura Road, Faridabad
+            7 Dayz Vatika, Sector 11, Faridabad
           </h2>
           <p className="text-gray-600 mt-1">
-            Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006{" "}
+            7 Dayz Vatika,20, Sector 9 Rd, Sector 11, Faridabad, Haryana 121006
           </p>
-
           {/* Tags */}
           <div className="flex space-x-2 mt-3">
             {["Wedding Hotels", "Banquet Halls", "Party Halls", "Marriage Halls"].map(
@@ -231,13 +231,13 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹2000</s> /Plate
+                <s className="text-red-500 text-xl">₹1400</s> /Plate
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <p className="text-black font-bold text-xl">N/A</p>
+                <s className="text-red-500 text-xl">₹1600</s> /Plate
               </span>
             </div>
           </div>
@@ -257,13 +257,12 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Milan Vatika, Faridabad offers enticing services that will make the event you have always dreamed about come true.
+          7 Dayz Vatika, Faridabad, is your one-stop destination for hosting indoor or outdoor celebrations of any kind. Offering excellent services, magical party areas, and ease of commute, this wedding hotel has everything to make your event a blockbuster.
           {showMore && (
             <span>
-              Milan Vatika has well-furnished guest rooms and can accommodate many of your outstation guests with ease. It also has a convenient parking area for guests and other in-house benefits to make things easy for you.
-
-
-              Milan Vatika Faridabad is a prestigious venue to gather your loved ones and plan a dreamy wedding ceremony.
+              <p>
+                Here at 7 Dayz Vatika Banquet Hall Faridabad, you have an in-house catering team at your disposal to help you serve the choicest vegetarian and non-vegetarian food which your guests will definitely enjoy. The skilled team of in-house decorators will transform the venue in such a way that no matter which event you are hosting, it will end up looking stunning. The polite staff here will help you host a smooth and memorable event. 7 Dayz Vatika reviews will surely help you assess the facilities and service quality maintained here.
+              </p>
             </span>
           )}
           <button
@@ -274,7 +273,7 @@ const Milanvatika = () => {
           </button>
         </p>
         <div className="flex items-center space-x-3 mt-4">
-          <span className="text-lg font-semibold">Call Milan Vatika</span>
+          <span className="text-lg font-semibold">Call 7 Dayz Vatika</span>
           <FaPhone className="text-green-500 text-2xl" />
         </div>
         <p className="text-gray-800 text-lg mt-1">+91-8375967071</p>
@@ -322,13 +321,13 @@ const Milanvatika = () => {
 
       {/* maps section */}
 
-      <div className="p-6 bg-gray-50">
+      <div className="p-6 bg-white">
         {/* Venue Address Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-2">📍 Venue Address</h2>
         <p className="text-gray-700 mb-4">
-          Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006
+          7 Dayz Vatika, Banquet Hall (Weddingz.in Partner), Faridabad, Haryana
           <a
-            href="https://www.google.co.in/maps/place/Milan+Vatika/@28.3760353,77.3097697,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdc6c1c9c8963:0xc034260f776e4162!8m2!3d28.3760354!4d77.3146406!16s%2Fg%2F1tf7kyfm?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.com/maps/place/7+Dayz+Vatika,+Banquet+Hall+(Weddingz.in+Partner)/@28.3699413,77.3171264,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdd0e6eb57c15:0xb8b54a7286109de9!8m2!3d28.3699413!4d77.3197013!16s%2Fg%2F11p18hcnj6?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline ml-2"
@@ -338,7 +337,7 @@ const Milanvatika = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Google Maps Embed for Milan Vatika, Faridabad */}
+          {/* Google Maps Embed for 7 Dayz Vatika, Banquet Hall */}
           <div className="rounded-lg overflow-hidden border shadow-lg">
             <iframe
               title="Google Maps"
@@ -348,7 +347,7 @@ const Milanvatika = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.857951583881!2d77.3097697!3d28.3760353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc6c1c9c8963%3A0xc034260f776e4162!2sMilan%20Vatika!5e0!3m2!1sen!2sin!4v1710172592489"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4383.587649231377!2d77.3171264!3d28.3699413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdd0e6eb57c15%3A0xb8b54a7286109de9!2s7%20Dayz%20Vatika%2C%20Banquet%20Hall%20(Weddingz.in%20Partner)!5e0!3m2!1sen!2sin!4v1710172592489"
             ></iframe>
           </div>
 
@@ -380,12 +379,12 @@ const Milanvatika = () => {
       {/* About this venue */}
 
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
-        <h2 className="text-2xl font-bold mb-2">Venue expert notes</h2>
+        <h2 className="text-2xl font-bold mb-2">Venue Expert Notes</h2>
         <p className="text-gray-700 mb-2">
-          Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
+          If you are looking for a venue that gives you the option to host both indoor as well outdoor celebrations, your search ends at 7 Dayz Vatika, Faridabad. Located around 2 km from Faridabad New Town
           {showMore && (
             <span>
-              this venue is very easy for all to find and reach. Events are successful when all small things are taken care of and hence, this venue takes care of all your catering, alcohol, accommodation, as well as decor-related needs for your event. This party place looks luxurious and welcoming, abundant with well-placed lights and chandeliers. So make sure you check out Milan Vatika, Faridabad now!
+              Railway Station, you won't get a single frown from your guests when it comes to commuting to and from the venue. With decor and catering requirements are well taken care of by the venue, you are just left to enjoy your event to the fullest. Why not give 7 Dayz Vatika, Faridabad, a chance to surprise you!
             </span>
           )}
           <button
@@ -406,11 +405,11 @@ const Milanvatika = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 text-gray-800">
           <ul className="space-y-3">
-            <li>• Lodging and parking facilities available</li>
-            <li>• Located 700m distance from Faridabad New Town railway station</li>
+            <li>• Complimentary changing room and parking space</li>
+            <li>• Located around 2km away from Faridabad New Town Railway Station</li>
           </ul>
           <ul className="space-y-3">
-            <li>• In-house decorators & catering service</li>
+            <li>• Provides catering and decor services for events</li>
             <li>• Serves both vegetarian and non-vegetarian food</li>
           </ul>
         </div>
@@ -426,9 +425,8 @@ const Milanvatika = () => {
           {/* Timings & Slots */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">⏰ Timings & Slots</h3>
-            <p className="text-gray-600">(Venue closes at 5:00 AM)</p>
-            <p className="text-gray-700"><strong>Morning:</strong> 9:00 AM - 5:00 PM</p>
-            <p className="text-gray-700"><strong>Evening:</strong> 7:00 PM - 5:00 AM</p>
+            <p className="text-gray-600">(Venue closes at 12:00 AM)</p>
+            <p className="text-gray-700"><strong>Morning:</strong> 8:00 AM - 12:00 AM</p>
           </div>
 
           {/* Taxes */}
@@ -440,38 +438,39 @@ const Milanvatika = () => {
           {/* Lodging */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
-            <p className="text-gray-700">Rooms Available: 25</p>
-            <p className="text-gray-700">Average price per room: ₹3,000</p>
+            <p className="text-gray-700"><strong>Rooms Available:</strong> Yes</p>
+            <p className="text-gray-700"><strong>No. of rooms:</strong> 2</p>
+            <p className="text-gray-700"><strong>Average price of room:</strong> Rs. 1000/-</p>
           </div>
 
           {/* Changing Room */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room</h3>
-            <p className="text-gray-700">No. of complimentary rooms: 1</p>
+            <p className="text-gray-700"><strong>No. of complimentary rooms:</strong> 1</p>
             <p className="text-gray-700">A/C Changing Room</p>
           </div>
 
           {/* Parking */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking</h3>
-            <p className="text-gray-700">No valet provided</p>
-            <p className="text-gray-700">Parking space for 200 vehicles</p>
+            <p className="text-gray-700">No valet provided by venue</p>
+            <p className="text-gray-700">Parking space available for 30 vehicles</p>
           </div>
 
           {/* Alcohol */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
             <p className="text-gray-700">Alcohol allowed at the venue</p>
-            <p className="text-gray-700">No outside alcohol allowed</p>
-            <p className="text-gray-700">No corkage costs</p>
+            <p className="text-gray-700">No outside alcohol allowed at the venue</p>
+            <p className="text-gray-700">No corkage costs applicable</p>
           </div>
 
           {/* Food */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
             <p className="text-gray-700">Food provided by the venue</p>
-            <p className="text-gray-700">No outside catering allowed</p>
-            <p className="text-gray-700">Non-veg not allowed</p>
+            <p className="text-gray-700">No outside food/caterer allowed</p>
+            <p className="text-gray-700">Non-veg allowed</p>
           </div>
 
           {/* Decoration */}
@@ -484,13 +483,13 @@ const Milanvatika = () => {
           {/* Advance Payment */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">💳 Advance Payment</h3>
-            <p className="text-gray-700">Total booking amount: ₹100,000</p>
+            <p className="text-gray-700">25% at the time of booking</p>
           </div>
 
           {/* Cancellation Policy */}
           <div className="bg-white p-4 ">
             <h3 className="text-xl font-semibold text-gray-900 mb-2">❌ Cancellation</h3>
-            <p className="text-gray-700">Non-cancellable</p>
+            <p className="text-gray-700">Cancellable</p>
           </div>
 
           {/* Other Policies */}
@@ -499,68 +498,18 @@ const Milanvatika = () => {
             <ul className="text-gray-700 list-disc pl-5">
               <li>No music allowed late</li>
               <li>Halls are air-conditioned</li>
-              <li>Ample parking available</li>
+              <li>No ample parking</li>
               <li>Baraat allowed</li>
-              <li>No firecrackers allowed</li>
+              <li>Firecrackers allowed</li>
               <li>Hawan allowed</li>
-              <li>Overnight wedding allowed</li>
+              <li>No overnight wedding allowed</li>
             </ul>
           </div>
         </div>
       </div>
 
       {/* call us section */}
-
-      <div className="bg-gray-50 p-6 mb-8 rounded-lg shadow-md max-w-7xl mx-auto mt-6">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          {/* Left Section - Form */}
-          <div className="md:w-2/3 space-y-3">
-            <h2 className="text-2xl font-bold">Have us call you!</h2>
-            <p className="text-gray-600">
-              Please provide us with your contact number (10 digit mobile number)
-            </p>
-
-            {/* Form */}
-            <form onSubmit={handleSubmit} className="flex items-center gap-3 mt-3">
-              <div className="flex border border-gray-300 rounded-lg overflow-hidden shadow-sm">
-                <span className="px-3 bg-gray-200 flex items-center">+91</span>
-                <input
-                  type="text"
-                  maxLength="10"
-                  className="p-2 w-full outline-none"
-                  placeholder="Phone Number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                />
-              </div>
-              <button
-                type="submit"
-                className="border border-pink-500 text-pink-500 px-5 py-2 rounded-lg hover:bg-pink-500 hover:text-white transition"
-              >
-                Submit
-              </button>
-            </form>
-
-            {/* Terms */}
-            <p className="text-sm text-gray-600">
-              By submitting this form you agree to our{" "}
-              <a href="#" className="text-blue-500 hover:underline">
-                Terms and Conditions
-              </a>
-            </p>
-          </div>
-
-          {/* Right Section - Image */}
-          <div className="hidden md:block md:w-1/3">
-            <img
-              src={customerimage}
-              alt="Call support illustration"
-              className="w-full"
-            />
-          </div>
-        </div>
-      </div>
+      <CallRequestForm />
 
       {/* Footer section */}
       <Footer />
@@ -568,4 +517,4 @@ const Milanvatika = () => {
   );
 };
 
-export default Milanvatika;
+export default Sevendayzvatika;

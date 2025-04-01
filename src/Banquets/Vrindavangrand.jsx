@@ -52,7 +52,7 @@ const images = [
   hotelgrand7,
 ];
 
-const Milanvatika = () => {
+const Vrindavangrand = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [currentImage, setCurrentImage] = useState(0);
@@ -205,10 +205,10 @@ const Milanvatika = () => {
 
           {/* Venue Name & Location */}
           <h2 className="text-2xl font-bold mt-2">
-            Milan Vatika, Mathura Road, Faridabad
+            Vrindavan Grand, Suraj Kund Badkhal Road, Faridabad
           </h2>
           <p className="text-gray-600 mt-1">
-            Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006{" "}
+            Vrindavan Grand, Lakkarpur, Sector 39, Suraj Kund Road, Faridabad, Haryana 121010
           </p>
 
           {/* Tags */}
@@ -231,13 +231,13 @@ const Milanvatika = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹600</s> /Plate
+                <s className="text-red-500 text-xl">₹1250</s> /Plate
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹800</s> /Plate
+                <p className="text-black text-xl font-bold">N/A</p>
               </span>
             </div>
           </div>
@@ -257,13 +257,11 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Milan Vatika, Faridabad offers enticing services that will make the event you have always dreamed about come true.
+          Vrindavan Grand, Faridabad offers banqueting space and event services you need to plan and execute a successful event and impress all your attendees.
           {showMore && (
             <span>
-              Milan Vatika has well-furnished guest rooms and can accommodate many of your outstation guests with ease. It also has a convenient parking area for guests and other in-house benefits to make things easy for you.
-
-
-              Milan Vatika Faridabad is a prestigious venue to gather your loved ones and plan a dreamy wedding ceremony.
+              From pre-wedding functions to big fat Indian weddings and various social gatherings, the banquet hall in Faridabad caters to a diverse range of events. You can even go ahead and host social events, birthdays, anniversaries, private parties, kitties, and family get-togethers as well.
+              <p>Vrindavan Grand, Faridabad offers catering and decor services, providing a one-stop solution for your event needs. Culinary offerings include a variety of vegetarian dishes, including Indian and international delicacies, designed to please your guests.</p>
             </span>
           )}
           <button
@@ -322,13 +320,13 @@ const Milanvatika = () => {
 
       {/* maps section */}
 
-      <div className="p-6 bg-gray-50">
+      <div className="p-6 bg-white">
         {/* Venue Address Section */}
         <h2 className="text-3xl font-bold text-gray-900 mb-2">📍 Venue Address</h2>
         <p className="text-gray-700 mb-4">
-          Milan Vatika, Sector 11, Block B, Old Faridabad, Faridabad, Haryana 121006
+          Vrindavan Grand, Lakkarpur, Sector 39, Suraj Kund Road, Faridabad, Haryana 121010
           <a
-            href="https://www.google.co.in/maps/place/Milan+Vatika/@28.3760353,77.3097697,17z/data=!3m1!4b1!4m6!3m5!1s0x390cdc6c1c9c8963:0xc034260f776e4162!8m2!3d28.3760354!4d77.3146406!16s%2Fg%2F1tf7kyfm?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
+            href="https://www.google.co.in/maps/place/Vrindavan+Grand/@28.4872961,77.286915,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce72c766cc543:0x36c31c05cc0967d!8m2!3d28.4872961!4d77.2894899"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline ml-2"
@@ -338,7 +336,7 @@ const Milanvatika = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Google Maps Embed for Milan Vatika, Faridabad */}
+          {/* Google Maps Embed for Vrindavan Grand, Faridabad */}
           <div className="rounded-lg overflow-hidden border shadow-lg">
             <iframe
               title="Google Maps"
@@ -348,7 +346,7 @@ const Milanvatika = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.857951583881!2d77.3097697!3d28.3760353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc6c1c9c8963%3A0xc034260f776e4162!2sMilan%20Vatika!5e0!3m2!1sen!2sin!4v1710172592489"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4382.205573262381!2d77.286915!3d28.4872961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce72c766cc543%3A0x36c31c05cc0967d!2sVrindavan%20Grand!5e0!3m2!1sen!2sin!4v1710172592489"
             ></iframe>
           </div>
 
@@ -382,10 +380,12 @@ const Milanvatika = () => {
       <div className="my-auto mx-auto mt-7 pb-10 p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-2xl font-bold mb-2">About this venue</h2>
         <p className="text-gray-700 mb-2">
-          Who said planning an event is tough? Check out Milan Vatika, Mathura Road, Faridabad and you will have the time of your life here. Located an hour away from Indira Gandhi International Airport,
+          The Vrindavan Grand located in Suraj Kund Badkhal Road, Faridabad has Banquet Halls, Birthday Party Halls, Party Halls, Marriage Halls. Hall can accomodate upto 500 guests in seating and 750 guests in floating.
           {showMore && (
             <span>
-              this venue is very easy for all to find and reach. Events are successful when all small things are taken care of and hence, this venue takes care of all your catering, alcohol, accommodation, as well as decor-related needs for your event. This party place looks luxurious and welcoming, abundant with well-placed lights and chandeliers. So make sure you check out Milan Vatika, Faridabad now!
+              <p>
+                Vegetarian food is served at this venue. Features of this wedding venues are : Food provided by the venue, Alcohol allowed at the venue, Outside alcohol allowed at the venue, Halls are air Conditioned, Baarat allowed, Hawan allowed, Overnight wedding allowed, Decor provided by the venue, Packages starts at Rs 1250 per plate for vegetarian menu and at Rs N/A for non veg menu.
+              </p>
             </span>
           )}
           <button
@@ -406,12 +406,12 @@ const Milanvatika = () => {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 gap-6 text-gray-800">
           <ul className="space-y-3">
-            <li>• Lodging and parking facilities available</li>
+            <li>• Convenient location</li>
             <li>• Located 700m distance from Faridabad New Town railway station</li>
           </ul>
           <ul className="space-y-3">
-            <li>• In-house decorators & catering service</li>
-            <li>• Serves both vegetarian and non-vegetarian food</li>
+            <li>• In-house caterers serve delicious food</li>
+            <li>• Spacious banquet hall</li>
           </ul>
         </div>
       </div>
@@ -419,108 +419,88 @@ const Milanvatika = () => {
 
       {/* venue policies section */}
 
-      <div className="p-6 bg-white ">
+      <div className="p-6 bg-white">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">📜 Venue Policies</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Timings & Slots */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">⏳ Timings & Slots</h3>
-            <p className="text-gray-700">Morning: <strong>10:00 AM - 12:00 AM</strong></p>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">⏳ Timings & Slots <span className="text-gray-500">(Venue closes at 12:00 AM)</span></h3>
+            <p className="text-gray-700"><strong>Morning:</strong> 8:00 AM - 4:00 PM</p>
+            <p className="text-gray-700"><strong>Evening:</strong> 6:30 PM - 12:00 AM</p>
           </div>
 
           {/* Taxes */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">💰 Taxes</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Taxes F&B: <strong>18.00%</strong></li>
-              <li>Total tax: <strong>18.0%</strong></li>
-            </ul>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">💰 Taxes</h3>
+            <p className="text-gray-700">Taxes F&B: <strong>18.00%</strong></p>
           </div>
 
           {/* Lodging */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🏨 Lodging</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Rooms Available</li>
-              <li>No. of rooms: <strong>20</strong></li>
-              <li>Avg. price per room: <strong>₹1000/-</strong></li>
-            </ul>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🏨 Lodging</h3>
+            <p className="text-gray-700">No rooms available</p>
           </div>
 
-          {/* Food */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🍽️ Food</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Food provided by the venue</li>
-              <li>No outside food/caterer allowed</li>
-              <li>Non-Veg allowed</li>
-            </ul>
-          </div>
-
-          {/* Changing Room */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🚪 Changing Rooms</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>No. of complimentary rooms: <strong>2</strong></li>
-              <li>A/C Changing Rooms Available</li>
-            </ul>
+          {/* Changing Rooms */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚪 Changing Room at</h3>
+            <p className="text-gray-700"><strong>No. of complimentary changing rooms:</strong> 2</p>
+            <p className="text-gray-700">Changing Room A/C</p>
           </div>
 
           {/* Parking */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🚗 Parking</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Valet service provided</li>
-              <li>Space available for <strong>100 vehicles</strong></li>
-            </ul>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚗 Parking At</h3>
+            <p className="text-gray-700">No Valet provided by venue</p>
+            <p className="text-gray-700"><strong>Parking space available for:</strong> 35 vehicles</p>
           </div>
 
           {/* Alcohol */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🍾 Alcohol</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Allowed at the venue</li>
-              <li>Outside alcohol allowed</li>
-              <li>No corkage costs applicable</li>
-            </ul>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍾 Alcohol</h3>
+            <p className="text-gray-700">Alcohol allowed at the venue</p>
+            <p className="text-gray-700">Outside alcohol allowed at the venue</p>
+            <p className="text-gray-700">No corkage costs applicable</p>
+          </div>
+
+          {/* Food */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🍽️ Food</h3>
+            <p className="text-gray-700">Food provided by the venue</p>
+            <p className="text-gray-700">No outside food/caterer allowed at the venue</p>
+            <p className="text-gray-700">No Non-Veg allowed at the venue</p>
           </div>
 
           {/* Decoration */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🎉 Decoration</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>No outside decorators allowed</li>
-              <li>Decor provided by the venue</li>
-            </ul>
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🎉 Decoration</h3>
+            <p className="text-gray-700">No Outside decorators allowed</p>
+            <p className="text-gray-700">Decor provided by the venue</p>
           </div>
 
-          {/* Advance */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">💵 Advance</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>25% at the time of booking</li>
-            </ul>
+          {/* Advance Payment */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">💵 Advance</h3>
+            <p className="text-gray-700">25% at the time of booking</p>
           </div>
 
-          {/* Cancellation */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">🚫 Cancellation</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Non-cancellable</li>
-            </ul>
+          {/* Cancellation Policy */}
+          <div className="bg-white p-4 ">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">🚫 Cancellation</h3>
+            <p className="text-gray-700">Non-cancellable</p>
           </div>
 
           {/* Other Policies */}
-          <div>
-            <h3 className="font-semibold text-lg text-gray-800">⚖️ Other Policies</h3>
-            <ul className="text-gray-700 list-disc ml-4">
-              <li>Music allowed late</li>
-              <li>Halls are air-conditioned</li>
-              <li>Ample parking</li>
+          <div className="bg-white p-4 col-span-2">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2">⚖️ Other Policies</h3>
+            <ul className="text-gray-700 list-disc pl-5">
+              <li>No Music allowed late</li>
+              <li>Halls are air conditioned</li>
+              <li>No ample parking</li>
               <li>Baraat allowed</li>
-              <li>Firecrackers allowed</li>
-              <li>No hawan allowed</li>
+              <li>No firecrackers allowed</li>
+              <li>Hawan allowed</li>
               <li>Overnight wedding allowed</li>
             </ul>
           </div>
@@ -586,4 +566,4 @@ const Milanvatika = () => {
   );
 };
 
-export default Milanvatika;
+export default Vrindavangrand;

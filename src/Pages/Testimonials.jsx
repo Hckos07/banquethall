@@ -51,6 +51,7 @@ const TestimonialCard = ({ testimonial, index }) => {
 };
 
 
+
 const TestimonialsSection = () => {
   // Sample Testimonial Data
   const testimonials = [
@@ -163,6 +164,10 @@ const TestimonialsSection = () => {
       date: "Dec. 20, 2024",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top whenever the route changes
+  }, [location]);
 
   return (
     <div className="container mx-auto px-6 py-10">

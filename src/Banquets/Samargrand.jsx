@@ -231,13 +231,13 @@ const Samargrand = () => {
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🥦 Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹600</s> /Plate
+                <p className="text-black font-bold text-xl">N/A</p> 
               </span>
             </div>
             <div className="flex justify-between items-center mt-2">
               <span className="text-gray-700">🍗 Non-Vegetarian</span>
               <span className="text-gray-900">
-                <s className="text-red-500 text-xl">₹800</s> /Plate
+                <p className="text-black font-bold text-xl">N/A</p> 
               </span>
             </div>
           </div>

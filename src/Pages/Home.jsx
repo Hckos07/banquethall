@@ -105,6 +105,7 @@ const App = () => {
       bgColor: "bg-gradient-to-r from-yellow-400 to-yellow-500",
     },
   ];
+
   return (
     <div>
       <Navbar />

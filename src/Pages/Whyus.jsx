@@ -89,7 +89,7 @@ const Whyus = () => {
     },
   ];
 
-  
+
   return (
     <>
       {/* Navbar */}
